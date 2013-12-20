@@ -26,7 +26,7 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 6
+DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = False
@@ -97,13 +97,12 @@ def button_size(size):
     return "btn-{}".format(size_map[int(size)])
 
 def strip_index(name):
-    idx = name.find("/index")
-    if idx > 0:
-        name = name[0:idx]
-    if name == "index":
-        return ""
-    else:
-        return name
+    name = name.rstrip('/')
+    name = name.rstrip('index')
+    name = name.rstrip('/')
+    if name and name[0] != '/':
+        name = '/' + name
+    return name
 
 JINJA_FILTERS = {'format_authors': format_authors,
                  'button_size': button_size,

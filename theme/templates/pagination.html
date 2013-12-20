@@ -29,15 +29,12 @@
 
   {% set base_url = articles_page.name|strip_index %}
 
-  {{ articles_page.name }} <br>
-  {{ base_url }}<br>
-
   <div style="margin:0 auto; text-align:center;">
     <ul class="pagination">
     {% if articles_page.number == 1 %}
-      <li class="disabled"><a href="{{ SITEURL }}/{{ base_url }}">&laquo;</a></li>
+      <li class="disabled"><a href="{{ SITEURL }}{{ base_url }}/">&laquo;</a></li>
     {% else %}
-      <li><a href="{{ SITEURL }}/{{ base_url }}">&laquo;</a></li>
+      <li><a href="{{ SITEURL }}{{ base_url }}/">&laquo;</a></li>
     {% endif %}
 
     {% for q in range(first, last + 1) %}
@@ -47,17 +44,17 @@
         <li>
       {%- endif -%}
       {%- if q == 1 -%}
-        <a href="{{ SITEURL }}/{{ base_url }}">
+        <a href="{{ SITEURL }}{{ base_url }}/">
       {%- else -%}
-        <a href="{{ SITEURL }}/{{ base_url }}/page/{{ q }}/">
+        <a href="{{ SITEURL }}{{ base_url }}/page/{{ q }}/">
       {%- endif -%}
       {{ q }}</a></li>
     {% endfor %}
 
     {%if articles_page.number == articles_paginator.num_pages %}
-      <li class="disabled"><a href="{{ SITEURL }}/{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
+      <li class="disabled"><a href="{{ SITEURL }}{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
     {% else %}
-      <li><a href="{{ SITEURL }}/{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
+      <li><a href="{{ SITEURL }}{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
     {% endif %}
     </ul>
   </div>

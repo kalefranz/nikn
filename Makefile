@@ -82,6 +82,12 @@ stopserver:
 
 publish:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
+	mv ../nikn-pages/.git ../.git
+	mv ../nikn-pages/.gitignore ../.gitignore
+	rm -rf ../nikn-pages/*
+	mv ../.git ../nikn-pages/.git
+	mv ../.gitignore ../nikn-pages/.gitignore
+	cp -r output/* ../nikn-pages/
 
 ssh_upload: publish
 	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
@@ -102,7 +108,10 @@ cf_upload: publish
 	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
 
 github: publish
-	ghp-import $(OUTPUTDIR)
+	cd ../nikn-pages
+	git add -A
+	git commit -m "site update"
 	git push origin gh-pages
+	cd $(BASEDIR)
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github

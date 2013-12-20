@@ -29,6 +29,9 @@
 
   {% set base_url = articles_page.name|strip_index %}
 
+  {{ articles_page.name }} <br>
+  {{ base_url }}<br>
+
   <div style="margin:0 auto; text-align:center;">
     <ul class="pagination">
     {% if articles_page.number == 1 %}

@@ -99,7 +99,9 @@ def button_size(size):
 def strip_index(name):
     idx = name.find("/index")
     if idx > 0:
-        return name[0:idx]
+        name = name[0:idx]
+    if name == "index":
+        return ""
     else:
         return name
 

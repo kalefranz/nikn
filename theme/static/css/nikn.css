@@ -39,9 +39,9 @@ nav {
 }
 .navbar-brand {
     height: 60px;
-    font-size: 330%;
+    font-size: 300%;
     position: relative;
-    top: -12px;
+    /*top: -12px;*/
 }
 .jumbotron {
     padding: 36px 60px;
@@ -70,6 +70,13 @@ hr {
     border-top: 3px solid #C0392B;
     margin: 1em 0;
     padding: 0;
+}
+#logo_tornado {
+    font-size: 75%;
+    color: #e74c3c;
+}
+a.navbar-brand:hover #logo_tornado {
+    color: #df2f1b;
 }
 #logo_not {
     font-family: Sansation, serif;
@@ -106,12 +113,6 @@ hr {
     height: 40px;
     background-color: #34495e;
 }
-#tornado_img_svg g {
-    fill: #e74c3c;
-}
-a.navbar-brand:hover #tornado_img_svg g {
-    fill: rgb(223, 47, 27);
-}
 .citation {
     font-size: 85%;
 }
@@ -132,7 +133,7 @@ h1 a:hover {
 }
 #tag_label {
     font-family: 'Ubuntu', sans-serif;
-    color: #aaaaaa;
+    color: #aaa;
     font-weight: 700;
     font-size: 70%;
 }
@@ -155,3 +156,34 @@ h1 a:hover {
 .social-buttons .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
 .social-buttons .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
 .social-buttons .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
+
+@media screen and (max-width: 498px) {
+    .navbar-brand {
+        font-size: 210%;
+        padding-left: 5px;
+        padding-right: 5px;
+        /*padding: 10px 10px 0 5px;*/
+        height: 40px;
+    }
+    .navbar-header button {
+        /*margin: 0 10px 5px 5px;*/
+        margin-bottom: 5px;
+    }
+    .jumbotron {
+        font-size: 105%;
+        padding: 18px 30px;
+    }
+    .jumbotron h1 {
+        font-size: 160%;
+    }
+    .jumbotron img {
+        width: 100px;
+        height: auto;
+    }
+    .main_content {
+        font-size: 120%;
+    }
+    .main_content h1, .main_content h2, .main_content h3 {
+        font-size: 140%;
+    }
+}

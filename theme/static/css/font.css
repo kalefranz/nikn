@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "nikn-1";
+  src:url("/static/font/nikn-1.eot");
+  src:url("/static/font/nikn-1.eot?#iefix") format("embedded-opentype"),
+    url("/static/font/nikn-1.woff") format("woff"),
+    url("/static/font/nikn-1.ttf") format("truetype"),
+    url("/static/font/nikn-1.svg#nikn-1") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "nikn-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 0.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "nikn-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 0.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-stack-overflow:before {
+  content: "a";
+}
+.icon-social-skype:before {
+  content: "b";
+}
+.icon-social-linkedin:before {
+  content: "d";
+}
+.icon-social-amazon:before {
+  content: "e";
+}
+.icon-social-apple:before {
+  content: "f";
+}
+.icon-social-android:before {
+  content: "g";
+}
+.icon-social-facebook:before {
+  content: "h";
+}
+.icon-social-evernote:before {
+  content: "i";
+}
+.icon-social-blogger:before {
+  content: "j";
+}
+.icon-paypal:before {
+  content: "k";
+}
+.icon-rss:before {
+  content: "l";
+}
+.icon-social-drive:before {
+  content: "m";
+}
+.icon-social-dropbox:before {
+  content: "n";
+}
+.icon-social-github:before {
+  content: "o";
+}
+.icon-social-reddit:before {
+  content: "p";
+}
+.icon-github:before {
+  content: "q";
+}
+.icon-fontawesome-webfont:before {
+  content: "r";
+}
+.icon-fontawesome-webfont-1:before {
+  content: "s";
+}
+.icon-fontawesome-webfont-2:before {
+  content: "t";
+}
+.icon-tornado:before {
+  content: "u";
+}
+.icon-fontawesome-webfont-3:before {
+  content: "v";
+}
+.icon-fontawesome-webfont-4:before {
+  content: "w";
+}
+.icon-fontawesome-webfont-5:before {
+  content: "x";
+}
+.icon-twitter:before {
+  content: "y";
+}
+.icon-fontawesome-webfont-6:before {
+  content: "c";
+}
+.icon-social-hacker-news:before {
+  content: "z";
+}
+.icon-hacker-news:before {
+  content: "A";
+}
+.icon-evernote:before {
+  content: "B";
+}
+.icon-amazon:before {
+  content: "C";
+}
+.icon-aws:before {
+  content: "D";
+}
+.icon-social-yelp:before {
+  content: "E";
+}
+.icon-yelp:before {
+  content: "F";
+}
+.icon-reddit:before {
+  content: "G";
+}
+.icon-google:before {
+  content: "H";
+}
+.icon-fontawesome-webfont-7:before {
+  content: "I";
+}
+.icon-fontawesome-webfont-8:before {
+  content: "J";
+}
+.icon-social-google-plus:before {
+  content: "K";
+}
+.icon-fontawesome-webfont-9:before {
+  content: "L";
+}
+.icon-skype:before {
+  content: "M";
+}
+.icon-fontawesome-webfont-10:before {
+  content: "N";
+}
+.icon-fontawesome-webfont-11:before {
+  content: "O";
+}
+.icon-fontawesome-webfont-12:before {
+  content: "P";
+}
+.icon-fontawesome-webfont-13:before {
+  content: "Q";
+}
+.icon-fontawesome-webfont-14:before {
+  content: "R";
+}
+.icon-fontawesome-webfont-15:before {
+  content: "S";
+}
+.icon-fontawesome-webfont-16:before {
+  content: "T";
+}
+.icon-fontawesome-webfont-17:before {
+  content: "U";
+}
+.icon-facebook-squared:before {
+  content: "V";
+}
+.icon-paypal-1:before {
+  content: "W";
+}
+.icon-linkedin:before {
+  content: "X";
+}
+.icon-trophy:before {
+  content: "Y";
+}
+.icon-git:before {
+  content: "Z";
+}
+.icon-ks-kansas:before {
+  content: "0";
+}
+.icon-co-colorado:before {
+  content: "1";
+}
+.icon-us-continental-united-states:before {
+  content: "2";
+}
+.icon-tx-texas:before {
+  content: "3";
+}
+.icon-ca-california:before {
+  content: "4";
+}
+.icon-attach:before {
+  content: "5";
+}
+.icon-skype-1:before {
+  content: "6";
+}

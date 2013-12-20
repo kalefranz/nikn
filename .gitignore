@@ -1,2 +1,4 @@
 .idea
-ignore
+output
+*.pid
+*.pyc

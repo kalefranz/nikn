@@ -1,0 +1,13 @@
+<a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480">Tweets by @kalefranz</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!--<i class="fa fa-github-alt"></i>...<br>-->
+<!--<i class="fa fa-stack-overflow"></i><br>-->
+<!--<i class="fa fa-twitter"></i><br>-->
+<!--<i class="fa fa-linkedin"></i><br>-->
+
+
+<!--recent posts, popular posts, tag cloud, github repos, tweets, social links, atom feeds, gittip-->
+{% for tag in tag_cloud %}
+    <a href="{{ SITEURL }}/tag/{{ tag.0 }}/"><button type="button" class="btn btn-danger {{ tag.1|button_size }}">{{ tag.0 }}</button></a>
+{% endfor %}

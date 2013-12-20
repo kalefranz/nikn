@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Sansation";
+    src: url('/static/font/sansation-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Sansation";
+    src: url('/static/font/sansation-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Sansation";
+    src: url('/static/font/sansation-light-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+html, body {
+    height: 100%;
+}
+body {
+    min-width:480px;
+    color: black;
+}
+a {
+    color: #2980b9;
+}
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+.navbar-default {
+    background-color: #34495e;
+}
+.navbar-brand {
+    height: 60px;
+    font-size: 330%;
+    position: relative;
+    top: -12px;
+}
+.jumbotron {
+    padding: 36px 60px;
+    line-height: 160%;
+    background-color: #1dd2af;
+}
+.aside {
+    background-color: #1abc9c;
+}
+section {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+}
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 3px solid #C0392B;
+    margin: 1em 0;
+    padding: 0;
+}
+#logo_not {
+    font-family: Sansation, serif;
+    font-weight: 700;
+    font-style: italic;
+    color: black;
+}
+#logo_in {
+    font-family: Sansation, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #7b8996;
+    font-size: 85%;
+}
+#logo_kansas {
+    font-family: Sansation, serif;
+    font-weight: 700;
+    font-style: italic;
+    color: white;
+}
+#logo_now {
+    font-family: Sansation, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    color: #e74c3c;
+}
+#wrap_not_footer {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -40px;
+    padding: 0 0 40px;
+}
+.page_footer {
+    height: 40px;
+    background-color: #34495e;
+}
+#tornado_img_svg g {
+    fill: #e74c3c;
+}
+a.navbar-brand:hover #tornado_img_svg g {
+    fill: rgb(223, 47, 27);
+}
+.citation {
+    font-size: 85%;
+}
+.citation .journal {
+    font-style: italic;
+}
+.citation .volume {
+    font-weight: 700;
+}
+.btn {
+    font-family: 'Ubuntu', sans-serif;
+}
+h1 a:hover {
+    text-decoration: none;
+}
+.tags {
+    padding: 10px 0;
+}
+#tag_label {
+    font-family: 'Ubuntu', sans-serif;
+    color: #aaaaaa;
+    font-weight: 700;
+    font-size: 70%;
+}
+
+.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+* html .cf { zoom: 1; }
+*:first-child+html .cf { zoom: 1; }
+.vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.social-buttons { display: block; list-style: none; padding: 0; margin: 20px; }
+.social-buttons > li { display: block; margin: 0; padding: 10px; float: left; }
+.social-buttons .socialite { display: block; position: relative; background: url('/static/asset/social-sprite.png') 0 0 no-repeat; }
+.social-buttons .socialite-loaded { background: none !important; }
+.social-buttons .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
+.social-buttons .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
+.social-buttons .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
+.social-buttons .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }

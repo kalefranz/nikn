@@ -10,7 +10,6 @@
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Ubuntu|Josefin+Slab:700|Crimson+Text' type='text/css'>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type='text/css'>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootswatch/3.0.2/flatly/bootstrap.min.css" type='text/css'>
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type='text/css'>
     <link rel="stylesheet" href="http://notinkansasnow.com/static/css/nikn.css" type='text/css'>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -23,14 +22,6 @@
 </head>
 <body>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div id="wrap_not_footer">
 
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -121,9 +112,7 @@ measurements, the authors predict and then verify ...</p>
   </article>
 
 
-<p class="paginator">
-    Page 1 / 1
-</p>
+
       </section>
       <aside class="col-sm-4 well aside">
 <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480">Tweets by @kalefranz</a>
@@ -136,13 +125,13 @@ measurements, the authors predict and then verify ...</p>
 
 
 <!--recent posts, popular posts, tag cloud, github repos, tweets, social links, atom feeds, gittip-->
-    <a href="http://notinkansasnow.com/tag/lasers/"><button type="button" class="btn btn-danger btn-sm">lasers</button></a>
     <a href="http://notinkansasnow.com/tag/dna/"><button type="button" class="btn btn-danger btn-lg">dna</button></a>
-    <a href="http://notinkansasnow.com/tag/II-VI semiconductors/"><button type="button" class="btn btn-danger btn-xs">II-VI semiconductors</button></a>
-    <a href="http://notinkansasnow.com/tag/quantum dots/"><button type="button" class="btn btn-danger btn-sm">quantum dots</button></a>
     <a href="http://notinkansasnow.com/tag/QCLs/"><button type="button" class="btn btn-danger btn-sm">QCLs</button></a>
-    <a href="http://notinkansasnow.com/tag/patents/"><button type="button" class="btn btn-danger btn-lg">patents</button></a>
     <a href="http://notinkansasnow.com/tag/intersubband optical transitions/"><button type="button" class="btn btn-danger btn-xs">intersubband optical transitions</button></a>
+    <a href="http://notinkansasnow.com/tag/quantum dots/"><button type="button" class="btn btn-danger btn-sm">quantum dots</button></a>
+    <a href="http://notinkansasnow.com/tag/lasers/"><button type="button" class="btn btn-danger btn-sm">lasers</button></a>
+    <a href="http://notinkansasnow.com/tag/patents/"><button type="button" class="btn btn-danger btn-lg">patents</button></a>
+    <a href="http://notinkansasnow.com/tag/II-VI semiconductors/"><button type="button" class="btn btn-danger btn-xs">II-VI semiconductors</button></a>
       </aside>
     </div><!-- /row -->
   </div><!-- /container -->
@@ -158,36 +147,6 @@ measurements, the authors predict and then verify ...</p>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
 
-<!-- in-line all svg asset -->
-<script type="text/javascript">
-  jQuery('img.svg').each(function(){
-    var $img = jQuery(this);
-    var imgID = $img.attr('id');
-    var imgClass = $img.attr('class');
-    var imgURL = $img.attr('src');
-
-    jQuery.get(imgURL, function(data) {
-      // Get the SVG tag, ignore the rest
-      var $svg = jQuery(data).find('svg');
-
-      // Add replaced image's ID to the new SVG
-      if(typeof imgID !== 'undefined') {
-        $svg = $svg.attr('id', imgID);
-      }
-      // Add replaced image's classes to the new SVG
-      if(typeof imgClass !== 'undefined') {
-        $svg = $svg.attr('class', imgClass+' replaced-svg');
-      }
-
-      // Remove any invalid XML tags as per http://validator.w3.org
-      $svg = $svg.removeAttr('xmlns:a');
-
-      // Replace image with new SVG
-      $img.replaceWith($svg);
-
-    }, 'xml');
-  });
-</script>
 
 <!--socialite-->
 <script src="http://notinkansasnow.com/static/js/socialite.js"></script>

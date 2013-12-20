@@ -53,10 +53,15 @@ AUTHOR_SAVE_AS = "{slug}/index.html"
 
 DIRECT_TEMPLATES = ('index', 'tags', 'archives')
 
+ARTICLE_DIR = 'articles'
+
 THEME = 'theme'
 THEME_STATIC_DIR = 'static'
 
-STATIC_PATHS = ['static', 'CNAME']
+STATIC_PATHS = ['static', 'CNAME', 'robots.txt', 'google3df5b54978a512de.html']
+#EXTRA_PATH_METADATA = {
+#    'extra': {'path': '../'},
+#    }
 
 DISPLAY_CATEGORIES_ON_MENU = True
 
@@ -77,7 +82,7 @@ PAGINATION_PATTERNS = (
 )
 
 PLUGIN_PATH = 'plugins/'
-PLUGINS=['sitemap',]
+PLUGINS = ['sitemap',]
 
 SITEMAP = {
     'format': 'xml',

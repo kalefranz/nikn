@@ -6,7 +6,7 @@ authors: A. Shen, H. Lu, M.C. Tamargo, W. Charles, I. Yokomizo, K.J. Franz, C. G
 journal: Applied Physics Letters
 volume: 90
 page: 071910
-local_id: APL_AShen_0706
+local_id: APL_AShen_0702
 doi: 10.1063/1.2679783
 disclaimer: Copyright 2007 American Institute of Physics. This article may be downloaded for personal use only. Any other use requires prior permission of the author and the American Institute of Physics.
 

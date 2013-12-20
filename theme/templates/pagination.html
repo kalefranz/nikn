@@ -1,16 +1,3 @@
-{#
-<p class="paginator">
-    {% if articles_page.has_previous() %}
-        <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
-    {% endif %}
-    Page {{ articles_page.number }} / {{ articles_paginator.num_pages }}
-    {% if articles_page.has_next() %}
-        <a href="{{ SITEURL }}/{{ articles_next_page.url }}">&raquo;</a>
-    {% endif %}
-</p>
-{% endif %}
-#}
-
 {% if DEFAULT_PAGINATION and articles_paginator.num_pages >= 2 %}
   {% set padding = 2 %} {# padding is max number of pagination as in 2*p+1 #}
   {% set first = articles_page.number - padding %}

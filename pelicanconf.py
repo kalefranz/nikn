@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*- #
 
 from __future__ import unicode_literals
-import os
 
 AUTHOR = u'Kale Franz'
 SITENAME = u'NotInKansasNow'
@@ -63,7 +62,6 @@ DISPLAY_CATEGORIES_ON_MENU = True
 
 MD_EXTENSIONS = ['extra', 'codehilite(css_class=highlight, linenums=False)',
                  'meta']
-#PLUGIN_PATH = '../pelican-plugins/'
 #PLUGINS = ['sitemap', 'extract_toc', 'tipue_search', 'liquid_tags.img']
 
 DISQUS_SITENAME = 'nikn'
@@ -78,7 +76,22 @@ PAGINATION_PATTERNS = (
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
 )
 
-# sitemap
+PLUGIN_PATH = 'plugins/'
+PLUGINS=['sitemap',]
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.5,
+        'indexes': 0.5,
+        'pages': 0.5
+    },
+    'changefreqs': {
+        'articles': 'monthly',
+        'indexes': 'daily',
+        'pages': 'monthly'
+    }
+}
 
 
 def format_authors(authors_str):

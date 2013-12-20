@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*- #
 
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Kale Franz'
 SITENAME = u'NotInKansasNow'
-SITEURL = 'http://notinkansasnow.com'
+SITEURL = ''
 
 TIMEZONE = 'US/Pacific'
 
@@ -28,7 +29,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 6
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 # Formatting for dates
 
@@ -72,6 +73,11 @@ TAG_CLOUD_STEPS = 4
 
 SUMMARY_END_TEXT = '...'
 
+PAGINATION_PATTERNS = (
+    (1, '{base_name}/', '{base_name}/index.html'),
+    (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
+)
+
 # sitemap
 
 
@@ -90,5 +96,14 @@ size_map = {1: 'xs', 2: 'sm', 3: 'md', 4: 'lg'}
 def button_size(size):
     return "btn-{}".format(size_map[int(size)])
 
+def strip_index(name):
+    idx = name.find("/index")
+    if idx > 0:
+        return name[0:idx]
+    else:
+        return name
 
-JINJA_FILTERS = {'format_authors': format_authors, 'button_size': button_size}
+JINJA_FILTERS = {'format_authors': format_authors,
+                 'button_size': button_size,
+                 'strip_index': strip_index,
+}

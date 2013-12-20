@@ -1,4 +1,4 @@
-{% if DEFAULT_PAGINATION %}
+{#
 <p class="paginator">
     {% if articles_page.has_previous() %}
         <a href="{{ SITEURL }}/{{ articles_previous_page.url }}">&laquo;</a>
@@ -8,4 +8,54 @@
         <a href="{{ SITEURL }}/{{ articles_next_page.url }}">&raquo;</a>
     {% endif %}
 </p>
+{% endif %}
+#}
+
+{% if DEFAULT_PAGINATION and articles_paginator.num_pages >= 2 %}
+  {% set padding = 2 %} {# padding is max number of pagination as in 2*p+1 #}
+  {% set first = articles_page.number - padding %}
+  {% set last = articles_page.number + padding %}
+  {% if first < 1 %}
+      {% set last = last - first + 1  %}
+      {% set first = 1 %}
+  {% endif %}
+  {% if last > articles_paginator.num_pages %}
+      {% set first = first - (last - articles_paginator.num_pages) %}
+      {% set last = articles_paginator.num_pages %}
+  {% endif %}
+  {% if first < 1 %}
+      {% set first = 1 %}
+  {% endif %}
+
+  {% set base_url = articles_page.name|strip_index %}
+
+  <div style="margin:0 auto; text-align:center;">
+    <ul class="pagination">
+    {% if articles_page.number == 1 %}
+      <li class="disabled"><a href="{{ SITEURL }}/{{ base_url }}">&laquo;</a></li>
+    {% else %}
+      <li><a href="{{ SITEURL }}/{{ base_url }}">&laquo;</a></li>
+    {% endif %}
+
+    {% for q in range(first, last + 1) %}
+      {%- if q == articles_page.number -%}
+        <li class="active">
+      {%- else -%}
+        <li>
+      {%- endif -%}
+      {%- if q == 1 -%}
+        <a href="{{ SITEURL }}/{{ base_url }}">
+      {%- else -%}
+        <a href="{{ SITEURL }}/{{ base_url }}/page/{{ q }}/">
+      {%- endif -%}
+      {{ q }}</a></li>
+    {% endfor %}
+
+    {%if articles_page.number == articles_paginator.num_pages %}
+      <li class="disabled"><a href="{{ SITEURL }}/{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
+    {% else %}
+      <li><a href="{{ SITEURL }}/{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
+    {% endif %}
+    </ul>
+  </div>
 {% endif %}

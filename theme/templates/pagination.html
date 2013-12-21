@@ -16,7 +16,7 @@
 
   {% set base_url = articles_page.name|strip_index %}
 
-  <div style="margin:0 auto; text-align:center;">
+  <div class="main_paginator">
     <ul class="pagination">
     {% if articles_page.number == 1 %}
       <li class="disabled"><a href="{{ SITEURL }}{{ base_url }}/">&laquo;</a></li>

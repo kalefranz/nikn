@@ -37,12 +37,6 @@ nav {
 .navbar-default {
     background-color: #34495e;
 }
-.navbar-brand {
-    height: 60px;
-    font-size: 300%;
-    position: relative;
-    /*top: -12px;*/
-}
 .jumbotron {
     padding: 36px 60px;
     line-height: 160%;
@@ -71,37 +65,77 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
-#logo_tornado {
+.navbar-brand {
+    height: 60px;
+    font-size: 300%;
+    position: relative;
+    top: -8px;
+}
+.logo_tornado {
     font-size: 75%;
     color: #e74c3c;
 }
-a.navbar-brand:hover #logo_tornado {
+a:hover .navbar-brand .logo_tornado {
     color: #df2f1b;
 }
-#logo_not {
+.logo_not {
     font-family: Sansation, serif;
     font-weight: 700;
     font-style: italic;
     color: black;
 }
-#logo_in {
+.logo_in {
     font-family: Sansation, sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #7b8996;
     font-size: 85%;
 }
-#logo_kansas {
+.logo_kansas {
     font-family: Sansation, serif;
     font-weight: 700;
     font-style: italic;
     color: white;
 }
-#logo_now {
+.logo_now {
     font-family: Sansation, sans-serif;
     font-weight: 200;
     font-style: normal;
     color: #e74c3c;
+}
+.label_bold {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: 700;
+}
+.social_button_item {
+    font-size: 26px;
+    padding: 5px 8px 1px 8px;
+}
+.social_button_group {
+    margin-bottom: 12px;
+}
+.twitter_frame {
+    margin-bottom: 11px;
+}
+.panel-heading {
+    padding: 7px 15px;
+}
+.tag_cloud_1 {
+    font-size: 110%;
+    margin: 3px;
+}
+.tag_cloud_2 {
+    font-size: 100%;
+    margin: 3px;
+}
+.tag_cloud_3 {
+    font-size: 90%;
+    margin: 3px;
+}
+.tag_cloud_4 {
+    font-size: 80%;
+    margin: 3px;
 }
 #wrap_not_footer {
     min-height: 100%;
@@ -112,9 +146,15 @@ a.navbar-brand:hover #logo_tornado {
 .page_footer {
     height: 40px;
     background-color: #34495e;
+    text-align: center;
+}
+.page_footer_container {
+    height: 40px;
+    line-height: 40px;
 }
 .citation {
     font-size: 85%;
+    margin-bottom: 10px;
 }
 .citation .journal {
     font-style: italic;
@@ -143,6 +183,27 @@ h1 a:hover {
 .pagination .disabled a:hover {
     cursor: default;
 }
+blockquote {
+    border-left-color: #ddd;
+    margin-bottom: 0;
+}
+.main_paginator {
+    margin:0 auto;
+    text-align:center;
+}
+header.preview {
+    margin-bottom: 12px;
+}
+footer.preview {
+    overflow: hidden;
+    margin-top: 12px;
+}
+article h2 {
+    color: #aaa;
+}
+article header.main_article {
+    margin-bottom: 16px;
+}
 
 .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 * html .cf { zoom: 1; }
@@ -156,6 +217,8 @@ h1 a:hover {
 .social-buttons .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
 .social-buttons .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
 .social-buttons .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
+
+
 
 @media screen and (max-width: 498px) {
     .navbar-brand {

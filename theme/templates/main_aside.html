@@ -1,13 +1,31 @@
-<a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480">Tweets by @kalefranz</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="btn-group btn-group-justified social_button_group">
+  <a href="https://github.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="m"></a>
+  <a href="https://www.facebook.com/kalef" target="_blank" class="btn btn-info social_button_item" data-icon="V"></a>
+  <a href="https://twitter.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="Y"></a>
+  <a href="http://stackoverflow.com/users/2127762/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="3"></a>
+  <a href="https://api.23andme.com/" target="_blank" class="btn btn-info social_button_item" data-icon="c"></a>
+  <a href="http://www.linkedin.com/in/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="6"></a>
+</div>
 
-<!--<i class="fa fa-github-alt"></i>...<br>-->
-<!--<i class="fa fa-stack-overflow"></i><br>-->
-<!--<i class="fa fa-twitter"></i><br>-->
-<!--<i class="fa fa-linkedin"></i><br>-->
+<div class="twitter_frame">
+  <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480" data-show-replies="true">Tweets by @kalefranz</a>
+</div>
 
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title label_bold">
+      <span style="font-size: 120%;">
+        <span class="logo_not">Not</span><span class="logo_in">In</span><span class="logo_kansas">Kansas</span><span class="logo_now">now</span>
+      </span>
+      &nbsp;TAGS</h3>
+  </div>
+  <div class="panel-body">
+    {% for tag in tag_cloud %}
+      <a href="{{ SITEURL }}/{{ tag.0.url }}"><button type="button" class="btn btn-danger btn-xs tag_cloud_{{ tag.1 }}">{{ tag.0 }}</button></a>
+    {% endfor %}
+  </div>
+</div>
 
+{#
 <!--recent posts, popular posts, tag cloud, github repos, tweets, social links, atom feeds, gittip-->
-{% for tag in tag_cloud %}
-    <a href="{{ SITEURL }}/tag/{{ tag.0 }}/"><button type="button" class="btn btn-danger {{ tag.1|button_size }}">{{ tag.0 }}</button></a>
-{% endfor %}
+#}

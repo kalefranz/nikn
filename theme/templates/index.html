@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block banner %}
-    {% include 'main_banner.html' %}
+    {% if articles_page.number == 1 %}
+      {% include 'main_banner.html' %}
+    {% endif %}
 {% endblock %}
 
 {% block content %}

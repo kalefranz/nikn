@@ -1,7 +1,7 @@
 date: 2008-12-01
 category: publication
 tags: II-VI semiconductors, molecular beam epitaxy, QCLs
-title: Molecular Beam Epitaxy Growth of ZnxCd1-xSe/Znx’Cdy’Mg1-x’-y’Se-InP Quantum Cascade Structures
+title: Molecular Beam Epitaxy Growth of Zn<sub>x</sub>Cd<sub>1-x</sub>Se/Zn<sub>x'</sub>Cd<sub>y'</sub>Mg<sub>1-x'-y'</sub>Se-InP Quantum Cascade Structures
 authors: W.O. Charles, K.J. Franz, A. Shen, A. Zhang, B. Li, Y Gong, G.F. Neumark, C. Gmachl, M.C. Tamargo
 journal: Journal of Crystal Growth
 volume: 310

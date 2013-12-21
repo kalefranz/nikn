@@ -1,5 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>NotInKansasNow</title><link href="http://notinkansasnow.com/" rel="alternate"></link><link href="http://notinkansasnow.com/feeds/all.atom.xml" rel="self"></link><id>http://notinkansasnow.com/</id><updated>2011-07-29T00:00:00-07:00</updated><entry><title>Room temperature and narrow intersubband electroluminescence from ZnCdSe/ZnCdMgSe quantum cascade laser structures</title><link href="http://notinkansasnow.com/publication/2011/07/room-temperature-and-narrow-intersubband-electroluminescence-from-zncdsezncdmgse-quantum-cascade-laser-structures/" rel="alternate"></link><updated>2011-07-29T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2011-07-29:publication/2011/07/room-temperature-and-narrow-intersubband-electroluminescence-from-zncdsezncdmgse-quantum-cascade-laser-structures/</id><summary type="html">&lt;p&gt;We report ZnCdSe/ZnCdMgSe Quantum Cascade structures with “two-phonon” and
+<feed xmlns="http://www.w3.org/2005/Atom"><title>NotInKansasNow</title><link href="http://notinkansasnow.com/" rel="alternate"></link><link href="http://notinkansasnow.com/feeds/all.atom.xml" rel="self"></link><id>http://notinkansasnow.com/</id><updated>2013-05-13T00:00:00-07:00</updated><entry><title>Introducing uncolorblind</title><link href="http://notinkansasnow.com/code/2013/05/introducing-uncolorblind/" rel="alternate"></link><updated>2013-05-13T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2013-05-13:code/2013/05/introducing-uncolorblind/</id><summary type="html">&lt;p&gt;I'm color blind. Or technically "color deficient." For example, most people can
+see the &lt;strong&gt;2&lt;/strong&gt; in the color plate. I can't. (Yet I can study it
+closely and point out individual dots that look green-ish, orange-ish, or
+red-ish to me. Weird; I know.) So an &lt;em&gt;utlra&lt;/em&gt; valuable tool for me in the past
+has been this &lt;a href="http://www.hikarun.com/e/"&gt;WhatColor&lt;/a&gt; app.
+Not only does it provide the RGB and Hex values for
+the color on your screen directly below your mouse, it also tells you the name
+of the color. I'm working mostly on OS X now, and Apple's DigitalColor Meter
+just doesn't compete (or have the color name feature). &lt;strong&gt;tl;dr&lt;/strong&gt;...I made my
+own; it's called &lt;em&gt;uncolorblind&lt;/em&gt;, and it's all on
+&lt;a href="https://github.com/kalefranz/uncolorblind"&gt;github&lt;/a&gt;. I'll also package up
+distributable binaries at some point too.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="color plate" src="/static/image/color_plate.jpg" /&gt;&lt;/p&gt;</summary><category term="code"></category><category term="color blind"></category></entry><entry><title>On Contracting Software Development</title><link href="http://notinkansasnow.com/code/2013/05/on-contracting-software-development/" rel="alternate"></link><updated>2013-05-13T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2013-05-13:code/2013/05/on-contracting-software-development/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Core Assertion:&lt;/strong&gt; The company owns the code, not the contractor.&lt;/p&gt;
+&lt;p&gt;If you're a contractor, why wouldn't you want to keep the actual source to
+yourself?  You lock the company your contacting for into using your services in
+perpetuity.  Good for the contractor; &lt;em&gt;very&lt;/em&gt; bad for the procuring company.  My
+guess is that less-than-competent and more "old school" contractors who aren't
+able to keep up with technology's pace will push this tactic for their own job
+security. But the contractor lock-in prevents the company from moving forward
+with their product using another contractor if the relationship sours with the
+current contractor.  It also prevents the company from transitioning away from
+contract work to an in-house development team.&lt;/p&gt;
+&lt;p&gt;The rest of this document contains steps necessary to have the best chance for
+getting quality code from a contractor.  I would consider each item mandatory.
+There are also plenty of "nice to haves," but I want to keep this right now to
+what I consider mandatory.&lt;/p&gt;
+&lt;h3&gt;You control the source control&lt;/h3&gt;
+&lt;p&gt;Your contractor will use the source control system that you provide.  It is your
+company's own source control system, and you give and revoke permissions to your
+own repositories.  Use Git.  Everybody uses Git today.  If your contractor
+complains that Git is "too hard," run away as fast as you can.  Create an account
+on either &lt;a href="http://www.github.com"&gt;github.com&lt;/a&gt; or
+&lt;a href="http://www.bitbucket.com"&gt;bitbucket.com&lt;/a&gt;.  Both are widely used and great
+products.&lt;/p&gt;
+&lt;h3&gt;Demand documentation&lt;/h3&gt;
+&lt;p&gt;Documentation of the system that your contractor is designing should be part of
+the deal.  Documented topics would include, for example,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;thorough explanation of the system architecture&lt;/li&gt;
+&lt;li&gt;thorough documentation of any API layers&lt;/li&gt;
+&lt;li&gt;code deployment &lt;a href="http://en.wikipedia.org/wiki/Runbook"&gt;run book&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Like source code revision control, &lt;em&gt;you&lt;/em&gt; should own the documentation and it
+should be kept in a location that &lt;em&gt;you&lt;/em&gt; control.  My recommendation is
+Atlassian's &lt;a href="http://www.atlassian.com/software/confluence/overview/team-collaboration-software"&gt;Confluence&lt;/a&gt;
+product.&lt;/p&gt;
+&lt;p&gt;One critical part of quality software is readable and comprehensible source code.
+Professional programmers in a team environment should be adept at writing in-code
+comments where necessary and in general write code that is overall
+self-documenting.  &lt;em&gt;Not all code is self documenting!  Writing self-documenting
+code takes deliberate effort.  Just because code compiles, it is not therefore
+"self-documenting"!!&lt;/em&gt;  Advice here would be to  require that every public
+function (within reason, so exclude getters, setters, etc.) have a
+language-relevant documentation block (docstring, javadoc, etc).&lt;/p&gt;
+&lt;h3&gt;Source code tests&lt;/h3&gt;
+&lt;p&gt;Professional programmers write unit tests.  To be sure that the code being
+developed runs as it should, demand unit tests be written by the programmers as
+part of the project.  &lt;a href="http://en.wikipedia.org/wiki/Code_coverage"&gt;Code coverage&lt;/a&gt;
+is a metric that describes what percent of your source code is "touched" or
+covered by unit tests.  Include a code coverage stipulation as part of your
+contract; a reasonable number is somewhere in the neighborhood of 80%.  Note
+that there is a danger with using code coverage as a sole metric for test
+quality.  From &lt;a href="http://stackoverflow.com/a/695888/2127762"&gt;this&lt;/a&gt; StackOverflow post:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Code coverage tells you what you definitely &lt;strong&gt;haven't&lt;/strong&gt; tested, not what you &lt;strong&gt;have&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Just realize that there are pitfalls to the code coverage metric and be aware of them.&lt;/p&gt;
+&lt;h3&gt;Continuous Integration&lt;/h3&gt;
+&lt;p&gt;There should be a
+&lt;a href="http://martinfowler.com/articles/continuousIntegration.html"&gt;continuous integration&lt;/a&gt;
+environment set up for the code base.  Whether you set this up or the contractor
+really doesn't matter, as long as you definitely have access to monitor it.  The
+value to you as the company will be in the ability to monitor project progress,
+monitor code coverage and other code quality metrics, and monitor the status of
+the current build (code compiling and all tests passing).
+&lt;a href="http://jenkins-ci.org"&gt;Jenkins&lt;/a&gt; is certainly the most main-stream CI
+technology, and you can apparently get a hosted version
+&lt;a href="http://www.cloudbees.com/jenkins-enterprise-by-cloudbees-overview.cb"&gt;here&lt;/a&gt;.
+Jenkins itself is free and open source, so you can deploy it to your own local
+or cloud servers too.  Another interesting option might be
+&lt;a href="http://travis-ci.com"&gt;Travis CI&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;DevOps considerations&lt;/h3&gt;
+&lt;p&gt;DevOps tasks are all those that deal with keeping your software running
+&lt;em&gt;in production&lt;/em&gt;. Are your servers healthy, or are they becoming overburdened?
+Is your application even running, or has something crashed?  Your architecture
+might be one that has several interdependent components, and that the front door
+is working properly doesn't necessarily mean a portion of the system hasn't
+crashed elsewhere.  Server and application health requires constant, automated
+monitoring.&lt;/p&gt;
+&lt;p&gt;The area of DevOps is often separate from the software development itself.  Make
+sure you have a DevOps strategy for system monitoring, and have the appropriate
+knowledge or resources to take action when something fails.&lt;/p&gt;</summary><category term="code"></category><category term="software development"></category><category term="contracting"></category></entry><entry><title>Room temperature and narrow intersubband electroluminescence from ZnCdSe/ZnCdMgSe quantum cascade laser structures</title><link href="http://notinkansasnow.com/publication/2011/07/room-temperature-and-narrow-intersubband-electroluminescence-from-zncdsezncdmgse-quantum-cascade-laser-structures/" rel="alternate"></link><updated>2011-07-29T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2011-07-29:publication/2011/07/room-temperature-and-narrow-intersubband-electroluminescence-from-zncdsezncdmgse-quantum-cascade-laser-structures/</id><summary type="html">&lt;p&gt;We report ZnCdSe/ZnCdMgSe Quantum Cascade structures with “two-phonon” and
 “bound-to-continuum” active region designs. The electroluminescence shows more
 than 3 times higher luminescence efficiency and 40% narrower linewidth (&amp;lt;30 meV)
 than previous reports. The measured turn-on voltage matches closely the
@@ -13,7 +104,7 @@ ZnCdSe/ZnCdMgSe quantum cascade structure at temperatures up to room
 temperature. We also developed a new ZnCdSe/MgSe quantum structure with
 metastable MgSe barriers. Intersubband absorption in the 3-5 μm range was
 observed. Calculations suggest that with this structure intersubband transitions
-as short as 1.55 μm may be achieved.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="intersubband optical transitions"></category></entry><entry><title>Molecular Beam Epitaxy Growth of ZnxCd1-xSe/Znx’Cdy’Mg1-x’-y’Se-InP Quantum Cascade Structures</title><link href="http://notinkansasnow.com/publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/" rel="alternate"></link><updated>2008-12-01T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2008-12-01:publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/</id><summary type="html">&lt;p&gt;We report growth by molecular beam epitaxy of a
+as short as 1.55 μm may be achieved.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="intersubband optical transitions"></category></entry><entry><title>Molecular Beam Epitaxy Growth of ZnxCd1-xSe/Znx'Cdy'Mg1-x'-y'Se-InP Quantum Cascade Structures</title><link href="http://notinkansasnow.com/publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/" rel="alternate"></link><updated>2008-12-01T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2008-12-01:publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/</id><summary type="html">&lt;p&gt;We report growth by molecular beam epitaxy of a
 Zn&lt;sub&gt;x&lt;/sub&gt;Cd&lt;sub&gt;1-x&lt;/sub&gt;Se/Zn&lt;sub&gt;x'&lt;/sub&gt;Cd&lt;sub&gt;y'&lt;/sub&gt;Mg&lt;sub&gt;1-x'-y'&lt;/sub&gt;Se
 quantum cascade (QC) structure that was
 designed for electroluminescence (EL) at ~4.5 µm. The QC active region is

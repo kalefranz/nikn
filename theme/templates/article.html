@@ -35,9 +35,9 @@
             <span class="volume">{{ article.volume }}</span>, {{ article.page }} ({{ article.date.year }})
           </div>
           <div>
-            <a href="{{ SITEURL }}/static/pdf/{{ article.local_id }}.pdf" rel="alternate" title="PDF Reprint"><button type="button" class="btn btn-warning btn-xs"><span data-icon="q" style="vertical-align: -1.5px; line-height: 1px;"></span> download</button></a>
+            <a href="{{ SITEURL }}/static/pdf/{{ article.local_id }}.pdf" rel="alternate" title="PDF Reprint" class="btn btn-warning btn-xs" role="button"><span data-icon="q" style="vertical-align: -1.5px; line-height: 1px;"></span> download</a>
             {% if article.doi %}
-              <a href="http://dx.doi.org/{{ article.doi }}" rel="alternate" title="doi: {{ article.doi }}"><button type="button" class="btn btn-warning btn-xs">doi: {{ article.doi }}</button></a>
+              <a href="http://dx.doi.org/{{ article.doi }}" rel="alternate" title="doi: {{ article.doi }}" class="btn btn-warning btn-xs" role="button">doi: {{ article.doi }}</a>
             {% endif %}
           </div>
         </blockquote>

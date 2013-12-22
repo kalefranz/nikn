@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://notinkansasnow.com/index.html</loc>
-<lastmod>2013-12-21T04:53:11-00:00</lastmod>
+<lastmod>2013-12-22T03:04:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://notinkansasnow.com/archives.html</loc>
-<lastmod>2013-12-21T04:53:11-00:00</lastmod>
+<lastmod>2013-12-22T03:04:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://notinkansasnow.com/tags.html</loc>
-<lastmod>2013-12-21T04:53:11-00:00</lastmod>
+<lastmod>2013-12-22T03:04:48-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -186,6 +186,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://notinkansasnow.com/tag/software-management/</loc>
+<lastmod>2013-05-13T00:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://notinkansasnow.com/tag/qcls/</loc>
 <lastmod>2011-07-29T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -195,6 +202,20 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://notinkansasnow.com/tag/dna/</loc>
 <lastmod>2002-08-01T00:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://notinkansasnow.com/tag/qt/</loc>
+<lastmod>2013-05-13T00:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://notinkansasnow.com/tag/contracting/</loc>
+<lastmod>2013-05-13T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -214,7 +235,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://notinkansasnow.com/tag/contracting/</loc>
+<loc>http://notinkansasnow.com/tag/python/</loc>
 <lastmod>2013-05-13T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -237,13 +258,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://notinkansasnow.com/tag/lasers/</loc>
 <lastmod>2011-07-29T00:00:00-00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>http://notinkansasnow.com/tag/software-development/</loc>
-<lastmod>2013-05-13T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

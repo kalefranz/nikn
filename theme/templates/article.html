@@ -23,9 +23,9 @@
       <header class="main_article">
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
         <div class="tags">
-          <span id="tag_label">TAGGED</span>
+          <span class="tag_label">TAGGED</span>
           {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}"><button type="button" class="btn btn-danger btn-xs">{{ tag }}</button></a>
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-danger btn-xs" role="button">{{ tag }}</a>
           {% endfor %}
         </div>
         <blockquote>
@@ -55,13 +55,13 @@
       <header class="main_article">
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
         <div class="tags" style="padding: 0;">
-          <span id="tag_label">TAGGED</span>
+          <span class="tag_label">TAGGED</span>
           {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}"><button type="button" class="btn btn-danger btn-xs">{{ tag }}</button></a>
+            <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-danger btn-xs" role="button">{{ tag }}</a>
           {% endfor %}
         </div>
-        <div><span id="tag_label">POSTED</span> <time pubdate datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
-          <span id="tag_label">by</span> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+        <div><span class="tag_label">POSTED</span> <time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
+          <span class="tag_label">by</span> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         </div>
       </header>
       {{ article.content }}

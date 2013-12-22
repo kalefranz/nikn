@@ -4,15 +4,15 @@
     <header class="preview">
       <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
       {% if article.category == 'publication' %}
-        <time pubdate datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
+        <time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
         &nbsp;
         {% for tag in article.tags %}
           <a href="{{ SITEURL }}/{{ tag.url }}"><button type="button" class="btn btn-danger btn-xs">{{ tag }}</button></a>
         {% endfor %}
-        <div><span id="tag_label">in</span> <em>{{ article.journal }}</em></div>
+        <div><span class="tag_label">in</span> <em>{{ article.journal }}</em></div>
       {% else %}
-        <div><span id="tag_label">POSTED</span> <time pubdate datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
-          <span id="tag_label">by</span> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+        <div><span class="tag_label">POSTED </span><time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
+          <span class="tag_label">by</span> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         &nbsp;
         {% for tag in article.tags %}
           <a href="{{ SITEURL }}/{{ tag.url }}"><button type="button" class="btn btn-danger btn-xs">{{ tag }}</button></a>

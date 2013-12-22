@@ -10,7 +10,6 @@
 <div class="twitter_frame">
   <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480" data-show-replies="true">Tweets by @kalefranz</a>
 </div>
-
 <div class="panel panel-info">
   <div class="panel-heading">
     <h3 class="panel-title label_bold">
@@ -21,10 +20,11 @@
   </div>
   <div class="panel-body">
     {% for tag in tag_cloud %}
-      <a href="{{ SITEURL }}/{{ tag.0.url }}"><button type="button" class="btn btn-danger btn-xs tag_cloud_{{ tag.1 }}">{{ tag.0 }}</button></a>
+      <a href="{{ SITEURL }}/{{ tag.0.url }}" class="btn btn-danger btn-xs tag_cloud_{{ tag.1 }}" role="button">{{ tag.0 }}</a>
     {% endfor %}
   </div>
 </div>
+
 
 {#
 <!--recent posts, popular posts, tag cloud, github repos, tweets, social links, atom feeds, gittip-->

@@ -42,7 +42,7 @@ PAGE_SAVE_AS = '{slug}.html'
 AUTHOR_URL = "{slug}/"
 AUTHOR_SAVE_AS = "{slug}/index.html"
 
-DIRECT_TEMPLATES = ('index', 'tags', 'archives')
+DIRECT_TEMPLATES = ('index', 'tags', 'archives', '404')
 
 ARTICLE_DIR = 'articles'
 

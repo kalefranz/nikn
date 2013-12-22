@@ -1,6 +1,6 @@
 date: 2013-05-13
 category: code
-tags: code, color blind
+tags: code, color blind, python, qt
 title: Introducing <em>uncolorblind</em>
 local_id:
 

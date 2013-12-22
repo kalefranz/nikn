@@ -1,6 +1,6 @@
 date: 2013-05-13
 category: code
-tags: code, software development, contracting
+tags: software management, contracting
 title: On Contracting Software Development
 local_id:
 

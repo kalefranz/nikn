@@ -1,6 +1,6 @@
 date: 2006-12-15
 category: publication
-tags: II-VI semiconductors, intersubband optical transitions
+tags: II-VI semiconductors, optoelectronics
 title: Optical characterization of intersubband transitions in Zn<sub>x</sub>Cd<sub>1−x</sub>Se/Zn<sub>x&#39;</sub>Cd<sub>y&#39;</sub>Mg<sub>1−x&#39;−y&#39;</sub>Se multiple quantum well structures by contactless electroreflectance
 authors: H. Lu, A. Shen, W. Charles, I. Yokomizo, M.C. Tarmargo, K.J. Franz, C. Gmachl, M. Munoz
 journal: Applied Physics Letters

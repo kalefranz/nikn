@@ -1,6 +1,6 @@
 date: 2007-05-31
 category: publication
-tags: II-VI semiconductors, intersubband optical transitions
+tags: II-VI semiconductors, molecular beam epitaxy
 title: Intersubband transitions in molecular-beam-epitaxy-grown wide band gap II-VI semiconductors
 authors: A. Shen, H. Lu, M.C. Tamargo, W. Charles, I. Yokomizo, C.Y. Song, H.C. Liu, S.K. Zhang, X. Zhou, R.R. Alfano, K.J. Franz, C. Gmachl
 journal: Journal of Vacuum Science & Technology B

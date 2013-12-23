@@ -57,6 +57,7 @@ html:
 
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+	rm -rf theme/static/css/.sass-cache
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -80,7 +81,7 @@ stopserver:
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-publish:
+publish: css
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	mv ../nikn-pages/.git ../.git
 	mv ../nikn-pages/.gitignore ../.gitignore
@@ -110,4 +111,15 @@ cf_upload: publish
 github: publish
 	cd ../nikn-pages; git add -A; git commit -m "site update"; git push origin gh-pages
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
+bootstrap:
+	rm -rf theme/static/css/bootstrap/ theme/static/css/flatly/ theme/static/css/.sass-cache
+	mkdir -p theme/static/css/bootstrap/ theme/static/css/flatly/
+	cp ~/src/bootstrap-sass/vendor/assets/stylesheets/bootstrap/* theme/static/css/bootstrap/
+	./less2scss ~/src/bootswatch/flatly/variables.less theme/static/css/flatly/_variables.scss
+	./less2scss ~/src/bootswatch/flatly/bootswatch.less theme/static/css/flatly/_bootswatch.scss
+
+css: bootstrap
+	sed -E -i '' '/family=Lato/s/^/\/\//' theme/static/css/flatly/_bootswatch.scss
+	cd theme/static/css; sass nikn.scss nikn.css
+
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github css bootstrap

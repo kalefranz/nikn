@@ -1,6 +1,6 @@
 date: 2009-03-15
 category: publication
-tags: II-VI semiconductors, intersubband optical transitions
+tags: II-VI semiconductors, optoelectronics
 title: Wide Band Gap II-VI Selenides for Short Wavelength Intersubband Devices
 authors: A. Shen, W.O. Charles, B.S. Li, K.J. Franz, C. Gmachl, Q. Zhang, M.C. Tamargo
 journal: Journal of Crystal Growth

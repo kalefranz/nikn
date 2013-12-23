@@ -1,0 +1,3 @@
+{% for tag in article.tags %}
+  <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-danger btn-xs" role="button">{{ tag }}</a>
+{% endfor %}

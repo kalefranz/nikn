@@ -24,9 +24,7 @@
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
         <div class="tags">
           <span class="tag_label">TAGGED</span>
-          {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-danger btn-xs" role="button">{{ tag }}</a>
-          {% endfor %}
+          {% include 'include/tag_list.html' %}
         </div>
         <blockquote>
           <div class="citation">{{ article.authors|format_authors }},
@@ -56,12 +54,10 @@
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
         <div class="tags" style="padding: 0;">
           <span class="tag_label">TAGGED</span>
-          {% for tag in article.tags %}
-            <a href="{{ SITEURL }}/{{ tag.url }}" class="btn btn-danger btn-xs" role="button">{{ tag }}</a>
-          {% endfor %}
+          {% include 'include/tag_list.html' %}
         </div>
         <div><span class="tag_label">POSTED</span> <time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
-          <span class="tag_label">by</span> <a class="url fn" href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+          <span class="tag_label">by </span><a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         </div>
       </header>
       {{ article.content }}

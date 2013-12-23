@@ -3,3 +3,4 @@
 output
 *.pid
 *.pyc
+.sass-cache

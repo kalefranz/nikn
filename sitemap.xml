@@ -5,21 +5,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://notinkansasnow.com/index.html</loc>
-<lastmod>2013-12-22T03:12:13-00:00</lastmod>
+<lastmod>2013-12-23T07:30:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://notinkansasnow.com/archives.html</loc>
-<lastmod>2013-12-22T03:12:13-00:00</lastmod>
+<lastmod>2013-12-23T07:30:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://notinkansasnow.com/tags.html</loc>
-<lastmod>2013-12-22T03:12:13-00:00</lastmod>
+<lastmod>2013-12-23T07:30:57-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -228,6 +228,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://notinkansasnow.com/tag/optoelectronics/</loc>
+<lastmod>2009-03-15T00:00:00-00:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://notinkansasnow.com/tag/metamaterials/</loc>
 <lastmod>2007-10-14T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
@@ -250,7 +257,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://notinkansasnow.com/tag/intersubband-optical-transitions/</loc>
-<lastmod>2009-03-15T00:00:00-00:00</lastmod>
+<lastmod>2007-09-06T00:00:00-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>

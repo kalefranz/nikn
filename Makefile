@@ -7,23 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
-
-FTP_HOST=localhost
-FTP_USER=anonymous
-FTP_TARGET_DIR=/
-
-SSH_HOST=localhost
-SSH_PORT=22
-SSH_USER=root
-SSH_TARGET_DIR=/var/www
-
-S3_BUCKET=my_s3_bucket
-
-CLOUDFILES_USERNAME=my_rackspace_username
-CLOUDFILES_API_KEY=my_rackspace_api_key
-CLOUDFILES_CONTAINER=my_cloudfiles_container
-
-DROPBOX_DIR=~/Dropbox/Public/
+PUBLISHDIR=$(BASEDIR)/../nikn-pages
 
 DEBUG ?= 0
 ifeq ($(DEBUG), 1)
@@ -55,8 +39,15 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-clean: clean_css
+clean: clean_css clean_publish clean_js
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
+
+clean_publish:
+	mv $(PUBLISHDIR)/.git $(PUBLISHDIR)/../.git
+	mv $(PUBLISHDIR)/.gitignore $(PUBLISHDIR)/../.gitignore
+	rm -rf $(PUBLISHDIR)/*
+	mv $(PUBLISHDIR)/../.git $(PUBLISHDIR)/.git
+	mv $(PUBLISHDIR)/../.gitignore $(PUBLISHDIR)/.gitignore
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -80,21 +71,16 @@ stopserver:
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-publish: css
+publish: js css clean
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
-	mv ../nikn-pages/.git ../.git
-	mv ../nikn-pages/.gitignore ../.gitignore
-	rm -rf ../nikn-pages/*
-	mv ../.git ../nikn-pages/.git
-	mv ../.gitignore ../nikn-pages/.gitignore
-	cp -r output/* ../nikn-pages/
-	./hashstatic ../nikn-pages
+	cp -r output/* $(PUBLISHDIR)
+	./hashstatic $(PUBLISHDIR)
 
 github: publish
-	cd ../nikn-pages; git add -A; git commit -m "site update"; git push origin gh-pages
+	cd $(PUBLISHDIR); git add -A; git commit -m "site update"; git push origin gh-pages
 
 clean_css:
-	rm -rf src/scss/bootstrap/ src/scss/flatly/ src/scss/.sass-cache
+	rm -rf src/scss/bootstrap/ src/scss/flatly/ src/scss/.sass-cache src/scss/nikn.css
 
 bootstrap: clean_css
 	mkdir -p src/scss/bootstrap/ src/scss/flatly/
@@ -105,6 +91,13 @@ bootstrap: clean_css
 css: bootstrap
 	sed -E -i '' '/family=Lato/s/^/\/\//' src/scss/flatly/_bootswatch.scss
 	cd src/scss; sass nikn.scss nikn.css
-	java -jar yuicompressor-2.4.8.jar src/scss/nikn.css > src/scss/nikn.min.css
+	java -jar yuicompressor-2.4.8.jar src/scss/nikn.css > theme/static/css/nikn.min.css
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github css bootstrap clean_css
+js: clean_js
+	./compressjs src/js/*.js
+	mv packed.js theme/static/js/packed.js
+
+clean_js:
+	rm -rf theme/static/js/packed.js
+
+.PHONY: html help clean regenerate serve devserver publish github css bootstrap clean_css clean_publish clean_js js

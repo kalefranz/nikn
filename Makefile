@@ -121,5 +121,6 @@ bootstrap:
 css: bootstrap
 	sed -E -i '' '/family=Lato/s/^/\/\//' theme/static/css/flatly/_bootswatch.scss
 	cd theme/static/css; sass nikn.scss nikn.css
+	java -jar yuicompressor-2.4.8.jar theme/static/css/nikn.css > theme/static/css/nikn.min.css
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github css bootstrap

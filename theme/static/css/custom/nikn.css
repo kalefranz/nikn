@@ -42,10 +42,6 @@ nav {
     line-height: 160%;
     background-color: #1dd2af;
 }
-.jumbotron img {
-  margin: 0 0 10px 15px;
-  float: right;
-}
 .aside {
     background-color: #1abc9c;
 }
@@ -150,12 +146,6 @@ a:hover .navbar-brand .logo_tornado {
     font-size: 80%;
     margin: 3px;
 }
-.tag_list {
-    display: inline-block;
-}
-.tag_button {
-    margin: 3px;
-}
 #wrap_not_footer {
     min-height: 100%;
     height: auto;
@@ -242,20 +232,23 @@ article header.main_article {
 .social-buttons .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
 .social-buttons .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
 
-@media screen and (max-width: $screen-phone) { // < 480px
+
+
+@media screen and (max-width: 498px) {
     .navbar-brand {
-        font-size: 220%;
-        padding-bottom: 10px;
+        font-size: 210%;
+        padding-left: 5px;
+        padding-right: 5px;
+        /*padding: 10px 10px 0 5px;*/
         height: 40px;
     }
-    .navbar-nav li a {
-        padding: 8px;
+    .navbar-header button {
+        /*margin: 0 10px 5px 5px;*/
+        margin-bottom: 5px;
     }
     .jumbotron {
-        padding: 18px 20px;
-        font-size: 14px;
-        font-family: 'Ubuntu', sans-serif;
-        line-height: 21px;
+        font-size: 105%;
+        padding: 18px 30px;
     }
     .jumbotron h1 {
         font-size: 160%;
@@ -263,7 +256,6 @@ article header.main_article {
     .jumbotron img {
         width: 100px;
         height: auto;
-        margin: 0 0 8px 10px;
     }
     .main_content {
         font-size: 120%;
@@ -271,36 +263,12 @@ article header.main_article {
     .main_content h1, .main_content h2, .main_content h3 {
         font-size: 140%;
     }
-}
-
-@media screen and (max-width: $screen-tablet) and (min-width: $screen-phone+1) {  // 480 <> 760 px
-    .navbar-brand {
-        font-size: 280%;
-        padding-bottom: 12px;
-        height: 50px;
+    .navbar-nav li a {
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     ul.navbar-nav {
-        padding-top: 9.5px;
-    }
-    .navbar-nav li a {
-        padding: 10px;
-    }
-    .jumbotron {
-        padding: 30px 40px;
-        font-size: 18px;
-        line-height: 30px;
-    }
-    .jumbotron img {
-        width: 130px;
-        height: auto;
-        margin: 0 0 8px 10px;
-    }
-}
-
-@media screen and (max-width: $screen-desktop) and (min-width: $screen-tablet+1) {
-    .jumbotron {
-        padding: 32px 50px;
-        font-size: 21px;
-        line-height: 32px;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }

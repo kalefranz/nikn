@@ -55,9 +55,8 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-clean:
+clean: clean_css
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
-	rm -rf theme/static/css/.sass-cache
 
 regenerate:
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
@@ -89,38 +88,23 @@ publish: css
 	mv ../.git ../nikn-pages/.git
 	mv ../.gitignore ../nikn-pages/.gitignore
 	cp -r output/* ../nikn-pages/
-
-ssh_upload: publish
-	scp -P $(SSH_PORT) -r $(OUTPUTDIR)/* $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR)
-
-rsync_upload: publish
-	rsync -e "ssh -p $(SSH_PORT)" -P -rvz --delete $(OUTPUTDIR)/ $(SSH_USER)@$(SSH_HOST):$(SSH_TARGET_DIR) --cvs-exclude
-
-dropbox_upload: publish
-	cp -r $(OUTPUTDIR)/* $(DROPBOX_DIR)
-
-ftp_upload: publish
-	lftp ftp://$(FTP_USER)@$(FTP_HOST) -e "mirror -R $(OUTPUTDIR) $(FTP_TARGET_DIR) ; quit"
-
-s3_upload: publish
-	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
-
-cf_upload: publish
-	cd $(OUTPUTDIR) && swift -v -A https://auth.api.rackspacecloud.com/v1.0 -U $(CLOUDFILES_USERNAME) -K $(CLOUDFILES_API_KEY) upload -c $(CLOUDFILES_CONTAINER) .
+	./hashstatic ../nikn-pages
 
 github: publish
 	cd ../nikn-pages; git add -A; git commit -m "site update"; git push origin gh-pages
 
-bootstrap:
-	rm -rf theme/static/css/bootstrap/ theme/static/css/flatly/ theme/static/css/.sass-cache
-	mkdir -p theme/static/css/bootstrap/ theme/static/css/flatly/
-	cp ~/src/bootstrap-sass/vendor/assets/stylesheets/bootstrap/* theme/static/css/bootstrap/
-	./less2scss ~/src/bootswatch/flatly/variables.less theme/static/css/flatly/_variables.scss
-	./less2scss ~/src/bootswatch/flatly/bootswatch.less theme/static/css/flatly/_bootswatch.scss
+clean_css:
+	rm -rf src/scss/bootstrap/ src/scss/flatly/ src/scss/.sass-cache
+
+bootstrap: clean_css
+	mkdir -p src/scss/bootstrap/ src/scss/flatly/
+	cp ~/src/bootstrap-sass/vendor/assets/stylesheets/bootstrap/* src/scss/bootstrap/
+	./less2scss ~/src/bootswatch/flatly/variables.less src/scss/flatly/_variables.scss
+	./less2scss ~/src/bootswatch/flatly/bootswatch.less src/scss/flatly/_bootswatch.scss
 
 css: bootstrap
-	sed -E -i '' '/family=Lato/s/^/\/\//' theme/static/css/flatly/_bootswatch.scss
-	cd theme/static/css; sass nikn.scss nikn.css
-	java -jar yuicompressor-2.4.8.jar theme/static/css/nikn.css > theme/static/css/nikn.min.css
+	sed -E -i '' '/family=Lato/s/^/\/\//' src/scss/flatly/_bootswatch.scss
+	cd src/scss; sass nikn.scss nikn.css
+	java -jar yuicompressor-2.4.8.jar src/scss/nikn.css > src/scss/nikn.min.css
 
-.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github css bootstrap
+.PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github css bootstrap clean_css

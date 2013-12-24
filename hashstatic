@@ -1,0 +1,122 @@
+#!/usr/bin/env python
+
+from __future__ import print_function
+
+import os
+import argparse
+import re
+import hashlib
+import base64
+import fnmatch
+from itertools import chain
+import json
+
+
+MODIFIABLE_FILE_EXTENSIONS = ('html', 'css', 'js')
+
+
+def create_ignore_regex():
+	ignore_regex = re.compile('')
+	if os.path.isfile('.gitignore'):
+		with open('.gitignore', 'r') as f:
+			paths = (fnmatch.translate(line.strip()) for line in f.readlines())
+			ignore_regex = re.compile('|'.join(chain(paths, ('.gitignore', '.git'))))
+	return ignore_regex
+
+
+def find_files_to_hash(partial_path_for_hash, ignore_regex):
+	hash_regex = re.compile(partial_path_for_hash)
+	files_to_hash = []
+	for dirpath, dirnames, filenames in os.walk('.'):
+		for filename in filenames:
+			filepath = os.path.join(dirpath, filename)
+			if hash_regex.search(filepath) and not ignore_regex.search(filepath):
+				files_to_hash.append(filepath)
+	return files_to_hash
+
+
+def create_map_of_hashes(files_to_hash):
+	sha_iter = (base64.urlsafe_b64encode(hashlib.sha256(open(filepath, 'rb').read()).digest()[:9]) for filepath in files_to_hash)
+	hash_map = {}
+	for filepath, sha in zip(files_to_hash, sha_iter):
+		filepath = filepath.lstrip('.')
+		path_components = filepath.split('/')
+		path_end = path_components[-1].split('.')
+		path_end[0] += '-' + sha
+		path_components[-1] = '.'.join(path_end)
+		new_path = '/'.join(path_components)
+		hash_map[filepath] = new_path
+	return hash_map
+
+
+def find_files_to_rewrite(ignore_regex):
+	rewrite_paths = []
+	for dirpath, dirnames, filenames in os.walk('.'):
+		for filename in filenames:
+			if filename.split('.')[-1] in MODIFIABLE_FILE_EXTENSIONS:
+				filepath = os.path.join(dirpath, filename)
+				if not ignore_regex.search(filepath):
+					rewrite_paths.append(filepath)
+	return rewrite_paths
+
+
+def modify_text(text, replace_regex, map_of_hashes):
+	return replace_regex.sub(lambda m: map_of_hashes[m.group(1)], text)
+
+
+def rewrite_files(filepaths, replace_regex, map_of_hashes):	
+	for filepath in filepaths:
+		with open(filepath, 'r+') as f:
+			current_text = f.read()
+			new_text = modify_text(current_text, replace_regex, map_of_hashes)
+			f.seek(0)
+			f.write(new_text)
+			f.truncate()
+
+
+def rename_files(map_of_hashes):
+	for old_path, new_path in map_of_hashes.items():
+		os.rename(old_path.lstrip('/'), new_path.lstrip('/'))
+
+
+def main():
+	parser = argparse.ArgumentParser()
+	parser.add_argument('root', help='path to root directory')
+	parser.add_argument('hash_path', help='regex path to use in search path', default='/static/', nargs='?')
+	# parser.add_argument('-c', '--commit', help='commit changes by renaming files', dest='commit', required=False)
+	args = parser.parse_args()
+
+	cwd = os.getcwd()
+	os.chdir(args.root)
+
+	ignore_regex = create_ignore_regex()
+	files_to_hash = find_files_to_hash(args.hash_path, ignore_regex)
+	map_of_hashes = create_map_of_hashes(files_to_hash)
+
+	# print json.dumps(map_of_hashes, sort_keys=True, indent=4, separators=(',', ': '))
+
+	files_to_rewrite = find_files_to_rewrite(ignore_regex)
+
+	replace_regex = re.compile(r'('+args.hash_path + r'[0-9a-zA-Z_\-/\.]+)')
+	rewrite_files(files_to_rewrite, replace_regex, map_of_hashes)
+	rename_files(map_of_hashes)
+
+	os.chdir(cwd)
+
+
+if __name__ == '__main__':
+	main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+

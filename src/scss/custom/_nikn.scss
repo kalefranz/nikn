@@ -273,7 +273,7 @@ article header.main_article {
     }
 }
 
-@media screen and (max-width: $screen-tablet) and (min-width: $screen-phone+1) {  // 480 <> 760 px
+@media screen and (max-width: $screen-tablet) and (min-width: $screen-phone+1) {  // 480 <> 768 px
     .navbar-brand {
         font-size: 280%;
         padding-bottom: 12px;
@@ -297,7 +297,7 @@ article header.main_article {
     }
 }
 
-@media screen and (max-width: $screen-desktop) and (min-width: $screen-tablet+1) {
+@media screen and (max-width: $screen-desktop) and (min-width: $screen-tablet+1) {  // 768 <> 992 px
     .jumbotron {
         padding: 32px 50px;
         font-size: 21px;

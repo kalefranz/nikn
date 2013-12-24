@@ -70,14 +70,14 @@
   </div>
   <div class="panel-body">
       <a href="http://notinkansasnow.com/tag/intersubband-optical-transitions/" class="btn btn-danger btn-xs tag_cloud_3" role="button">intersubband optical transitions</a>
-      <a href="http://notinkansasnow.com/tag/software-management/" class="btn btn-danger btn-xs tag_cloud_4" role="button">software management</a>
-      <a href="http://notinkansasnow.com/tag/qcls/" class="btn btn-danger btn-xs tag_cloud_1" role="button">QCLs</a>
       <a href="http://notinkansasnow.com/tag/molecular-beam-epitaxy/" class="btn btn-danger btn-xs tag_cloud_2" role="button">molecular beam epitaxy</a>
-      <a href="http://notinkansasnow.com/tag/code/" class="btn btn-danger btn-xs tag_cloud_4" role="button">code</a>
-      <a href="http://notinkansasnow.com/tag/quantum-dots/" class="btn btn-danger btn-xs tag_cloud_3" role="button">quantum dots</a>
       <a href="http://notinkansasnow.com/tag/lasers/" class="btn btn-danger btn-xs tag_cloud_1" role="button">lasers</a>
+      <a href="http://notinkansasnow.com/tag/qcls/" class="btn btn-danger btn-xs tag_cloud_1" role="button">QCLs</a>
+      <a href="http://notinkansasnow.com/tag/quantum-dots/" class="btn btn-danger btn-xs tag_cloud_3" role="button">quantum dots</a>
       <a href="http://notinkansasnow.com/tag/ii-vi-semiconductors/" class="btn btn-danger btn-xs tag_cloud_1" role="button">II-VI semiconductors</a>
+      <a href="http://notinkansasnow.com/tag/software-management/" class="btn btn-danger btn-xs tag_cloud_4" role="button">software management</a>
       <a href="http://notinkansasnow.com/tag/optoelectronics/" class="btn btn-danger btn-xs tag_cloud_2" role="button">optoelectronics</a>
+      <a href="http://notinkansasnow.com/tag/code/" class="btn btn-danger btn-xs tag_cloud_4" role="button">code</a>
   </div>
 </div>
 
@@ -108,41 +108,15 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-2.0.3.min.js"></script>
 <!--<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>-->
 
-<script type="text/javascript" src="http://notinkansasnow.com/static/js/tweetable.jquery.js"></script>
-<!--<script type="text/javascript" src="http://notinkansasnow.com/static/js/timeago.jquery.js"></script>-->
+
+
 <script type="text/javascript">
-jQuery(function(){
-  jQuery('#tweets').tweetable({
-    username: 'kalefranz',
-    time: true,
-    rotate: false,
-    speed: 4000,
-    limit: 6,
-    replies: false,
-    position: 'append',
-    failed: "Sorry, twitter is currently unavailable.",
-    loading: "loading tweets...",
-    html5: true,
-    onComplete:function($ul){
-      $('time').timeago();
-    }
-  });
-});
+    $(window).bind("load", function() {
+       $.getScript('/static/js/social.js', function() {});
+    });
 </script>
 
-<!--twitter-->
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 
-
-<!--socialite-->
-<script src="http://notinkansasnow.com/static/js/socialite.js"></script>
-<script type="text/javascript">
-$(document).ready(function()
-  {
-    Socialite.load($(this)[0]);
-  }
-);
-</script>
 </body>
 </html>

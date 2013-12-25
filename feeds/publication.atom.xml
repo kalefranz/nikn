@@ -6,14 +6,129 @@ than previous reports. The measured turn-on voltage matches closely the
 calculated value, indicating the improved electron transport characteristics in
 these structures. A waveguide design suitable for mode confinement in this
 material system is also presented, which resulted in a structure with a single
-narrow electroluminescence peak for all temperatures from 80 to 300 K.&lt;/p&gt;</summary><category term="QCLs"></category><category term="II-VI semiconductors"></category><category term="lasers"></category></entry><entry><title>Wide Band Gap II-VI Selenides for Short Wavelength Intersubband Devices</title><link href="http://notinkansasnow.com/publication/2009/03/wide-band-gap-ii-vi-selenides-for-short-wavelength-intersubband-devices/" rel="alternate"></link><updated>2009-03-15T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-03-15:publication/2009/03/wide-band-gap-ii-vi-selenides-for-short-wavelength-intersubband-devices/</id><summary type="html">&lt;p&gt;In this paper, we present our recent progress towards the realization of short
+narrow electroluminescence peak for all temperatures from 80 to 300 K.&lt;/p&gt;</summary><category term="QCLs"></category><category term="II-VI semiconductors"></category><category term="lasers"></category></entry><entry><title>Growth of Znx'Cd1−x′Se/ZnxCdyMg1−x−ySe–InP quantum cascade structures for emission in the 3–5 μm range</title><link href="http://notinkansasnow.com/publication/2010/03/growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures-for-emission-in-the-3-5-mm-range/" rel="alternate"></link><updated>2010-03-23T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2010-03-23:publication/2010/03/growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures-for-emission-in-the-3-5-mm-range/</id><summary type="html">&lt;p&gt;The molecular beam epitaxial growth and electroluminescence (EL) properties of
+Zn&lt;sub&gt;0.48&lt;/sub&gt;Cd&lt;sub&gt;0.52&lt;/sub&gt;Se/Zn&lt;sub&gt;0.24&lt;/sub&gt;Cd&lt;sub&gt;0.18&lt;/sub&gt;Mg&lt;sub&gt;0.58&lt;/sub&gt;Se
+quantum cascade (QC) structures are reported. The samples were composed of 30
+repeats of a three-well active region. Cladding layers were inserted to isolate
+the core of the EL structure from the heavily doped contact region and to obtain
+optical confinement. Electroluminescence was observed in the 4–5 μm range. The
+observed narrowing of the electroluminescence linewidth was tentatively
+attributed, in part, to the incorporation of the ZnCdMgSe waveguide layers. A
+test sample consisting of multiple asymmetric coupled quantum well active
+regions separated by quaternary barrier layers was also investigated. The
+Fourier transform infrared (FTIR) absorption spectroscopy measurements suggest
+that QC structures with EL emission in the 3–4 μm range can be achieved with
+these materials.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="molecular beam epitaxy"></category><category term="QCLs"></category></entry><entry><title>Short Injector Quantum Cascade Lasers</title><link href="http://notinkansasnow.com/publication/2010/02/short-injector-quantum-cascade-lasers/" rel="alternate"></link><updated>2010-02-25T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2010-02-25:publication/2010/02/short-injector-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;We report our study on the effects of shortened quantum cascade (QC) laser
+injector regions. While conventional short-wavelength QC lasers typically have
+around seven or more injector region quantum wells, we investigate QC structures
+with three and two injector wells. Improvements in threshold currents, output
+powers, and wall-plug efficiencies are expected for fundamental reasons. At heat
+sink temperatures near 80 K, we observe threshold current densities less than
+0.5 kA/cm&lt;sup&gt;2&lt;/sup&gt;, nearly 4 W peak output power, and wall-plug efficiencies
+in excess of 20%. At room temperature, we see threshold current densities around
+2.3 kA/cm&lt;sup&gt;2&lt;/sup&gt;, output powers in excess of 1 W, and wall-plug
+efficiencies around 7.6%. We also observe new effects in midinfrared QC lasers,
+such as a pronounced negative differential resistance, pulse instabilities, and
+multiple and varied turn-off mechanisms. These effects result from the greatly
+abbreviated injector regions with highly discrete states.&lt;/p&gt;</summary><category term="QCLs"></category><category term="lasers"></category></entry><entry><title>Highly Power-efficient Quantum Cascade Lasers</title><link href="http://notinkansasnow.com/publication/2010/01/highly-power-efficient-quantum-cascade-lasers/" rel="alternate"></link><updated>2010-01-10T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2010-01-10:publication/2010/01/highly-power-efficient-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;Quantum cascade lasers are promising mid-infrared semiconductor light sources
+for molecular detection in applications such as environmental sensing or
+medical diagnostics. For such applications, researchers have been striving to
+improve device performance. Recently, improvements in wall plug efficiency have
+been pursued with a view to realizing compact, portable, power-efficient and
+high-power quantum cascade laser systems. However, advances have largely been
+incremental, and the basic quantum design has remained unchanged for many years,
+with the wall plug efficiency yet to reach above 35%. A crucial factor in
+quantum cascade laser performance is the efficient transport of electrons into
+the laser active regions. We recently theoretically described this transport
+process as limited by the interface-roughness-induced detuning of resonant
+tunnelling. Here, we report that an ‘ultrastrong coupling’ design strategy
+overcomes this limiting factor and leads to the experimental realization of
+quantum cascade lasers with 40–50% wall plug efficiency when operated in pulsed
+mode at temperatures of 160 K or lower.&lt;/p&gt;</summary><category term="QCLs"></category><category term="lasers"></category></entry><entry><title>A widely voltage-tunable quantum cascade laser based on 'two-step' coupling</title><link href="http://notinkansasnow.com/publication/2009/07/a-widely-voltage-tunable-quantum-cascade-laser-based-on-two-step-coupling/" rel="alternate"></link><updated>2009-07-14T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-07-14:publication/2009/07/a-widely-voltage-tunable-quantum-cascade-laser-based-on-two-step-coupling/</id><summary type="html">&lt;p&gt;A novel quantum cascade laser design with "two-step" coupling between the
+injector and the upper laser state is demonstrated to achieve a widely
+voltage-tunable laser spectrum. Electroluminescence from this design can be
+tuned over a range of more than 200 cm&lt;sup&gt;−1&lt;/sup&gt; with a tuning coefficient of
+~700 cm&lt;sup&gt;−1&lt;/sup&gt;/V per stage. Lasers based on this design provide a tuning range of
+~100 cm&lt;sup&gt;−1&lt;/sup&gt; (8.3–9 µm) above threshold with a tuning coefficient of
+~900 cm&lt;sup&gt;−1&lt;/sup&gt;/V per stage at a constant temperature of 295 K.&lt;/p&gt;</summary><category term="QCLs"></category><category term="lasers"></category><category term="spectral tuning"></category></entry><entry><title>Quantum cascade lasers with voltage defect of less than one longitudinal optical phonon energy</title><link href="http://notinkansasnow.com/publication/2009/06/quantum-cascade-lasers-with-voltage-defect-of-less-than-one-longitudinal-optical-phonon-energy/" rel="alternate"></link><updated>2009-06-25T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-06-25:publication/2009/06/quantum-cascade-lasers-with-voltage-defect-of-less-than-one-longitudinal-optical-phonon-energy/</id><summary type="html">&lt;p&gt;Efficient use of applied voltage in quantum cascade (QC) lasers is a critical
+factor in achieving high wall-plug efficiency and low compliance voltage. We
+demonstrate a QC laser emitting at 4.2 µm featuring a low voltage defect and
+short injector with only four quantum wells. Devices with a voltage defect of
+20 meV, well below the energy of the longitudinal optical phonons, and a voltage
+efficiency of 91%, a record value for QC lasers, are reported for pulsed
+operation at 180 K. Voltage efficiencies of greater than 80% are exhibited at
+room temperature. Overall performance showed wall-plug efficiencies ranging
+from 21% at cryogenic temperatures to 5.3% at room temperature.&lt;/p&gt;</summary><category term="phonons"></category><category term="QCLs"></category><category term="lasers"></category></entry><entry><title>Mid-infrared Semiconductor Optical Metamaterials</title><link href="http://notinkansasnow.com/publication/2009/06/mid-infrared-semiconductor-optical-metamaterials/" rel="alternate"></link><updated>2009-06-18T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-06-18:publication/2009/06/mid-infrared-semiconductor-optical-metamaterials/</id><summary type="html">&lt;p&gt;We report on a novel class of semiconductor metamaterials that employ a strongly
+anisotropic dielectric function to achieve negative refraction in the
+midinfrared region of the spectrum, ~8.5–13 µm. We present two types of
+metamaterials, layered highly doped/undoped heterostructures and quantum well
+superlattices that are highly anisotropic. Contrary to other optical
+metamaterials these heterostructure systems are optically thick (up to 20 µm
+thick), planar, and require no additional fabrication steps beyond the initial
+growth. Using transmission and reflection measurements and modeling of the
+highly doped heterostructures, we demonstrate that these materials exhibit
+negative refraction. For the highly doped quantum well superlattices, we
+demonstrate anomalous reflection due to the strong anisotropy of the material
+but a determination of the sign of refraction is still difficult. This new
+class of semiconductor metamaterials has great potential for waveguiding and
+imaging applications in the long-wave infrared.&lt;/p&gt;</summary><category term="metamaterials"></category><category term="semiconductors"></category></entry><entry><title>Voltage Tunability of Quantum Cascade Lasers</title><link href="http://notinkansasnow.com/publication/2009/05/voltage-tunability-of-quantum-cascade-lasers/" rel="alternate"></link><updated>2009-05-19T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-05-19:publication/2009/05/voltage-tunability-of-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;The voltage tunability of three types of quantum cascade laser designs is
+investigated. The tuning coefficients and tuning ranges of electroluminescence
+and laser emission from all designs are measured and compared with the
+calculated results. A reduced tunability was observed in all lasers above
+threshold. This is attributed to the decrease of resistance across the laser
+active region (AR) as the photon density increases. A resumed tunability high
+above threshold occurs in all lasers with anticrossed injector ground and upper
+laser states. Lasers based on the anticrossed diagonal transition are tunable
+above threshold, with a tuning range of about 30 cm&lt;sup&gt;-1&lt;/sup&gt; (~3% of the laser emission
+wavenumber), i.e., a tuning rate of
+750 cm&lt;sup&gt;-1&lt;/sup&gt;V&lt;sup&gt;-1&lt;/sup&gt;•period&lt;sup&gt;-1&lt;/sup&gt; of the AR and the injector.&lt;/p&gt;</summary><category term="lasers"></category><category term="QCLs"></category><category term="spectral tuning"></category></entry><entry><title>Wide Band Gap II-VI Selenides for Short Wavelength Intersubband Devices</title><link href="http://notinkansasnow.com/publication/2009/03/wide-band-gap-ii-vi-selenides-for-short-wavelength-intersubband-devices/" rel="alternate"></link><updated>2009-03-15T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-03-15:publication/2009/03/wide-band-gap-ii-vi-selenides-for-short-wavelength-intersubband-devices/</id><summary type="html">&lt;p&gt;In this paper, we present our recent progress towards the realization of short
 wavelength intersubband devices with wide band gap II-VI selenide
 semiconductors. Intersubband electroluminescence at 4.8 μm was observed in a
 ZnCdSe/ZnCdMgSe quantum cascade structure at temperatures up to room
 temperature. We also developed a new ZnCdSe/MgSe quantum structure with
 metastable MgSe barriers. Intersubband absorption in the 3-5 μm range was
 observed. Calculations suggest that with this structure intersubband transitions
-as short as 1.55 μm may be achieved.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="optoelectronics"></category></entry><entry><title>Molecular Beam Epitaxy Growth of ZnxCd1-xSe/Znx'Cdy'Mg1-x'-y'Se-InP Quantum Cascade Structures</title><link href="http://notinkansasnow.com/publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/" rel="alternate"></link><updated>2008-12-01T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2008-12-01:publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/</id><summary type="html">&lt;p&gt;We report growth by molecular beam epitaxy of a
+as short as 1.55 μm may be achieved.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="optoelectronics"></category></entry><entry><title>Wavelength selection for quantum cascade lasers by cavity length</title><link href="http://notinkansasnow.com/publication/2009/03/wavelength-selection-for-quantum-cascade-lasers-by-cavity-length/" rel="alternate"></link><updated>2009-03-04T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-03-04:publication/2009/03/wavelength-selection-for-quantum-cascade-lasers-by-cavity-length/</id><summary type="html">&lt;p&gt;A systematic shift in spectral emission wavenumbers in quantum cascade lasers
+(QCLs) is observed over a variation in cavity lengths from 0.5 to 3 mm resulting
+in a gain peak shift ranging from 2404 to 2286 cm&lt;sup&gt;−1&lt;/sup&gt;. Thereby, a wavelength
+selection range of 118 cm&lt;sup&gt;−1&lt;/sup&gt; is provided, which is sufficiently broad
+for selecting the laser emission across the entire CO2 absorption band at
+2326 cm&lt;sup&gt;−1&lt;/sup&gt; (4.3 µm). In contrast to current QCL wavelength selection
+techniques, modifying the cavity length is a straightforward postprocessing
+procedure. Experimental evidence confirms that this frequency shift is due to a
+change in threshold voltage and applied electric field as a function of cavity
+length which is in agreement with the theory.&lt;/p&gt;</summary><category term="lasers"></category><category term="QCLs"></category><category term="infrared spectroscopy"></category></entry><entry><title>Role of interface roughness in the transport and lasing characteristics of quantum-cascade lasers</title><link href="http://notinkansasnow.com/publication/2009/03/role-of-interface-roughness-in-the-transport-and-lasing-characteristics-of-quantum-cascade-lasers/" rel="alternate"></link><updated>2009-03-03T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-03-03:publication/2009/03/role-of-interface-roughness-in-the-transport-and-lasing-characteristics-of-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;A density-matrix based theory of transport and lasing in quantum-cascade lasers reveals that large disparity between luminescent linewidth and broadening of the tunneling transition changes the design guidelines to favor strong coupling between injector and upper laser level. This conclusion is supported by the experimental evidence.&lt;/p&gt;</summary><category term="lasers"></category><category term="electron transport"></category><category term="QCLs"></category></entry><entry><title>Voltage tuning of gain spectra in quantum cascade lasers</title><link href="http://notinkansasnow.com/publication/2009/02/voltage-tuning-of-gain-spectra-in-quantum-cascade-lasers/" rel="alternate"></link><updated>2009-02-03T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-02-03:publication/2009/02/voltage-tuning-of-gain-spectra-in-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;The voltage tuning of gain spectra in three types of Quantum Cascade laser
+designs is investigated. The gain spectra of the luminescence device are tunable
+over the whole voltage operation range for all designs. The lasers are as
+tunable as the electroluminescence below threshold, while a reduced tunability
+is observed in all lasers above threshold. This is attributed to the decrease of
+resistance across the laser active region as the photon density increases. A
+resumed tunability high above threshold occurs in all lasers based on the
+anti-crossed designs. Lasers based on the anti-crossed diagonal transition are
+tunable above threshold, with a tuning range of about 40 cm&lt;sup&gt;-1&lt;/sup&gt; (~4% of the laser
+emission wavenumber) at room temperature, i.e. a tuning rate of
+800 cm&lt;sup&gt;-1&lt;/sup&gt; per volt per period of active region and injector.&lt;/p&gt;</summary><category term="QCLs"></category><category term="lasers"></category></entry><entry><title>Lasing-induced reduction of core heating in high wall plug efficiency quantum cascade lasers</title><link href="http://notinkansasnow.com/publication/2009/01/lasing-induced-reduction-of-core-heating-in-high-wall-plug-efficiency-quantum-cascade-lasers/" rel="alternate"></link><updated>2009-01-26T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2009-01-26:publication/2009/01/lasing-induced-reduction-of-core-heating-in-high-wall-plug-efficiency-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;Quantum cascade (QC) laser core heating is a primary impediment to high device
+wall plug efficiency (WPE). Here, we demonstrate that efficient photon
+generation produces a quantifiable reduction in heating of the QC laser core
+temperature. By superimposing low duty cycle current pulses on a core-heating
+dc baseline, we observe the instantaneous threshold current and current
+efficiency evolution as the dc input is varied. From these measurements we
+recover the laser core temperature &lt;em&gt;T&lt;sub&gt;core&lt;/sub&gt;&lt;/em&gt;. Results agree well with calculations
+of &lt;em&gt;T&lt;sub&gt;core&lt;/sub&gt;&lt;/em&gt; based on measured thermal resistance and WPE. Using the
+same thermal model for a laser with negligible WPE, we show that the large
+WPE of the measured device-—24% for an 80 K heat sink-—results in a core
+temperature reduction of ~15 K.&lt;/p&gt;</summary><category term="QCLs"></category><category term="lasers"></category></entry><entry><title>High k-space lasing in a dual wavelength quantum cascade laser</title><link href="http://notinkansasnow.com/publication/2008/12/high-k-space-lasing-in-a-dual-wavelength-quantum-cascade-laser/" rel="alternate"></link><updated>2008-12-14T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2008-12-14:publication/2008/12/high-k-space-lasing-in-a-dual-wavelength-quantum-cascade-laser/</id><summary type="html">&lt;p&gt;We report on a quantum cascade (QC) laser structure with an energy configuration
+able to establish local population inversion of electrons high in &lt;em&gt;k&lt;/em&gt;-space
+through intrinsic processes. We observe dual wavelength emission from two
+discrete optical transitions lasing near &lt;em&gt;λ&lt;/em&gt; ≈ 9.5 and 8.2 µm.
+Temperature-dependent performance attributes show that the two transitions are
+highly coupled: competition for charge carriers is apparent from anti-correlated
+behaviour in output power. The anti-correlated behaviour is further observed
+through the temperature dependence of threshold currents, with the secondary
+transition having a negative characteristic temperature T&lt;sub&gt;0&lt;/sub&gt; before it sharply
+becomes positive. The two optical transitions represent a conventional QC laser
+transition at &lt;em&gt;k&lt;/em&gt; ≈ 0 and another laser transition from non-thermal electrons at
+k ≈ 3.6×108 m&lt;sup&gt;-1&lt;/sup&gt;.&lt;/p&gt;</summary><category term="lasers"></category><category term="QCLs"></category><category term="phonons"></category></entry><entry><title>Molecular Beam Epitaxy Growth of ZnxCd1-xSe/Znx'Cdy'Mg1-x'-y'Se-InP Quantum Cascade Structures</title><link href="http://notinkansasnow.com/publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/" rel="alternate"></link><updated>2008-12-01T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2008-12-01:publication/2008/12/molecular-beam-epitaxy-growth-of-znxcd1-xseznxcdymg1-x-yse-inp-quantum-cascade-structures/</id><summary type="html">&lt;p&gt;We report growth by molecular beam epitaxy of a
 Zn&lt;sub&gt;x&lt;/sub&gt;Cd&lt;sub&gt;1-x&lt;/sub&gt;Se/Zn&lt;sub&gt;x'&lt;/sub&gt;Cd&lt;sub&gt;y'&lt;/sub&gt;Mg&lt;sub&gt;1-x'-y'&lt;/sub&gt;Se
 quantum cascade (QC) structure that was
 designed for electroluminescence (EL) at ~4.5 µm. The QC active region is
@@ -72,7 +187,7 @@ region and requires only an anisotropic dielectric function with a single
 resonance. Using reflection and transmission measurements and a comprehensive
 model of the material, we demonstrate that our material exhibits negative
 refraction. This is furthermore confirmed through a straightforward beam optics
-experiment.&lt;/p&gt;</summary><category term="metamaterials"></category><category term="negative refractive index"></category></entry><entry><title>Optical Properties of Heavily Doped n-type CdSe Quantum Dots for Intersubband Device Applications</title><link href="http://notinkansasnow.com/publication/2007/09/optical-properties-of-heavily-doped-n-type-cdse-quantum-dots-for-intersubband-device-applications/" rel="alternate"></link><updated>2007-09-06T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2007-09-06:publication/2007/09/optical-properties-of-heavily-doped-n-type-cdse-quantum-dots-for-intersubband-device-applications/</id><summary type="html">&lt;p&gt;In this research, interband and intersubband optical properties of heavily doped
+experiment.&lt;/p&gt;</summary><category term="metamaterials"></category><category term="negative refractive index"></category><category term="semiconductors"></category></entry><entry><title>Optical Properties of Heavily Doped n-type CdSe Quantum Dots for Intersubband Device Applications</title><link href="http://notinkansasnow.com/publication/2007/09/optical-properties-of-heavily-doped-n-type-cdse-quantum-dots-for-intersubband-device-applications/" rel="alternate"></link><updated>2007-09-06T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2007-09-06:publication/2007/09/optical-properties-of-heavily-doped-n-type-cdse-quantum-dots-for-intersubband-device-applications/</id><summary type="html">&lt;p&gt;In this research, interband and intersubband optical properties of heavily doped
 n-type CdSe quantum dots were investigated by temperature dependent
 photoluminescence (PL) spectroscopy, picosecond time-resolved PL spectroscopy
 and Fourier transform infrared (FTIR) spectroscopy. Two doped and one undoped
@@ -82,8 +197,8 @@ leads to decreasing of activation energy of nonradiative recombination centers,
 however, does not affect the luminescence efficiency of doped quantum dots. Time
 resolved PL experiments show that the PL decay times of the doped samples have
 weak dependence on dot size and are much longer than that of the undoped sample.
-The two doped CdSe QD samples show strong Intersubband IR absorption that peaked
-at 2.54 μm, 2.69 μm and 3.51 μm.&lt;/p&gt;</summary><category term="quantum dots"></category><category term="II-VI semiconductors"></category><category term="intersubband optical transitions"></category></entry><entry><title>Intersubband transitions in molecular-beam-epitaxy-grown wide band gap II-VI semiconductors</title><link href="http://notinkansasnow.com/publication/2007/05/intersubband-transitions-in-molecular-beam-epitaxy-grown-wide-band-gap-ii-vi-semiconductors/" rel="alternate"></link><updated>2007-05-31T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2007-05-31:publication/2007/05/intersubband-transitions-in-molecular-beam-epitaxy-grown-wide-band-gap-ii-vi-semiconductors/</id><summary type="html">&lt;p&gt;The authors report the study of intersubband transitions in ZnCdMgSe-based wide
+The two doped CdSe QD samples show strong intersubband IR absorption that peaked
+at 2.54 μm, 2.69 μm and 3.51 μm.&lt;/p&gt;</summary><category term="quantum dots"></category><category term="II-VI semiconductors"></category></entry><entry><title>Intersubband transitions in molecular-beam-epitaxy-grown wide band gap II-VI semiconductors</title><link href="http://notinkansasnow.com/publication/2007/05/intersubband-transitions-in-molecular-beam-epitaxy-grown-wide-band-gap-ii-vi-semiconductors/" rel="alternate"></link><updated>2007-05-31T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2007-05-31:publication/2007/05/intersubband-transitions-in-molecular-beam-epitaxy-grown-wide-band-gap-ii-vi-semiconductors/</id><summary type="html">&lt;p&gt;The authors report the study of intersubband transitions in ZnCdMgSe-based wide
 band gap II-VI semiconductors. The samples were prepared by molecular beam
 epitaxy on InP substrates. Both ZnCdSe/ZnCdMgSe multiple quantum wells and
 CdSe/ZnCdMgSe quantum dot multilayer stacks were grown. Strong intersubband
@@ -99,7 +214,7 @@ Contactless electroreflectance (CER) spectroscopy and Fourier transform infrared
 Excellent agreement between the estimated value obtained by CER and the value
 measured by FTIR was achieved. Intersubband absorption at 6.89 and 5.37 µm was
 observed demonstrating the ability to tune the properties of these wide band
-gap II-VI materials for mid-IR intersubband device applications.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="intersubband optical transitions"></category></entry><entry><title>Evidence of cascaded emission in a dual-wavelength Quantum Cascade laser</title><link href="http://notinkansasnow.com/publication/2007/02/evidence-of-cascaded-emission-in-a-dual-wavelength-quantum-cascade-laser/" rel="alternate"></link><updated>2007-02-28T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2007-02-28:publication/2007/02/evidence-of-cascaded-emission-in-a-dual-wavelength-quantum-cascade-laser/</id><summary type="html">&lt;p&gt;This letter reports on a quantum cascade laser that exhibits simultaneous
+gap II-VI materials for mid-IR intersubband device applications.&lt;/p&gt;</summary><category term="II-VI semiconductors"></category><category term="quantum wells"></category></entry><entry><title>Evidence of cascaded emission in a dual-wavelength Quantum Cascade laser</title><link href="http://notinkansasnow.com/publication/2007/02/evidence-of-cascaded-emission-in-a-dual-wavelength-quantum-cascade-laser/" rel="alternate"></link><updated>2007-02-28T00:00:00-08:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2007-02-28:publication/2007/02/evidence-of-cascaded-emission-in-a-dual-wavelength-quantum-cascade-laser/</id><summary type="html">&lt;p&gt;This letter reports on a quantum cascade laser that exhibits simultaneous
 dual-wavelength emission from two consecutive optical transitions in each active
 region. These "cascaded" transitions—a second-excited state to first-excited
 state and a first-excited state to ground state—yield light at ~9.5 and ~8.2 µm,

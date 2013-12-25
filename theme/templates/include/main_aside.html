@@ -1,30 +1,33 @@
-<div class="btn-group btn-group-justified social_button_group">
-  <a href="https://github.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="m"></a>
-  <a href="https://www.facebook.com/kalef" target="_blank" class="btn btn-info social_button_item" data-icon="V"></a>
-  <a href="https://twitter.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="Y"></a>
-  <a href="http://stackoverflow.com/users/2127762/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="3"></a>
-  <a href="https://api.23andme.com/" target="_blank" class="btn btn-info social_button_item" data-icon="c"></a>
-  <a href="http://www.linkedin.com/in/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="6"></a>
-</div>
+<div class="well aside">
 
-<div class="twitter_frame">
-  <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480" data-show-replies="true">Tweets by @kalefranz</a>
-</div>
-<div class="panel panel-info">
-  <div class="panel-heading">
-    <h3 class="panel-title label_bold">
-      <span style="font-size: 120%;">
-        <span class="logo_not">Not</span><span class="logo_in">In</span><span class="logo_kansas">Kansas</span><span class="logo_now">now</span>
-      </span>
-      &nbsp;TAGS</h3>
+  <div class="btn-group btn-group-justified social_button_group">
+    <a href="https://github.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="m"></a>
+    <a href="https://www.facebook.com/kalef" target="_blank" class="btn btn-info social_button_item" data-icon="V"></a>
+    <a href="https://twitter.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="Y"></a>
+    <a href="http://stackoverflow.com/users/2127762/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="3"></a>
+    <a href="https://api.23andme.com/" target="_blank" class="btn btn-info social_button_item" data-icon="c"></a>
+    <a href="http://www.linkedin.com/in/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="6"></a>
   </div>
-  <div class="panel-body">
-    {% for tag in tag_cloud %}
-      <a href="{{ SITEURL }}/{{ tag.0.url }}" class="btn btn-danger btn-xs tag_cloud_{{ tag.1 }}" role="button">{{ tag.0 }}</a>
-    {% endfor %}
-  </div>
-</div>
 
+  <div class="twitter_frame">
+    <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480" data-show-replies="true">Tweets by @kalefranz</a>
+  </div>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h3 class="panel-title label_bold">
+        <span style="font-size: 120%;">
+          <span class="logo_not">Not</span><span class="logo_in">In</span><span class="logo_kansas">Kansas</span><span class="logo_now">now</span>
+        </span>
+        &nbsp;TAGS</h3>
+    </div>
+    <div class="panel-body">
+      {% for tag in tag_cloud %}
+        <a href="{{ SITEURL }}/{{ tag.0.url }}" class="btn btn-danger btn-xs tag_cloud_{{ tag.1 }}" role="button">{{ tag.0 }}</a>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
 
 {#
 <!--recent posts, popular posts, tag cloud, github repos, tweets, social links, atom feeds, gittip-->

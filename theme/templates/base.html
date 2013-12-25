@@ -12,6 +12,8 @@
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Ubuntu|Josefin+Slab:700|Crimson+Text' type='text/css'>
     <link rel="stylesheet" href="{{ SITEURL }}/static/css/nikn.min.css" type='text/css'>
 
+    <link rel="icon" href="{{ SITEURL }}/static/asset/favicon.png">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.min.js"></script>
@@ -55,7 +57,7 @@
       <section class="col-md-8 main_content">
         {% block content %}{% endblock %}
       </section>
-      <aside class="col-md-4 well aside">
+      <aside class="col-md-4">
         {% block aside %}
           {% include 'include/main_aside.html' %}
         {% endblock %}

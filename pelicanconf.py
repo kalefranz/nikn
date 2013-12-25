@@ -56,6 +56,8 @@ STATIC_PATHS = ['static', 'CNAME', 'robots.txt', 'google3df5b54978a512de.html']
 
 DISPLAY_CATEGORIES_ON_MENU = True
 
+#sudo wget -P /usr/local/lib/python2.7/site-packages/markdown/extensions/ https://raw.github.com/sgraber/markdown.superscript/master/superscript.py
+#sudo wget -P /usr/local/lib/python2.7/site-packages/markdown/extensions/ https://raw.github.com/sgraber/markdown.subscript/master/subscript.py
 MD_EXTENSIONS = ['extra', 'codehilite(css_class=highlight, linenums=False)',
                  'meta']
 

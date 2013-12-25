@@ -1,6 +1,6 @@
 date: 2007-10-14
 category: publication
-tags: metamaterials, negative refractive index
+tags: metamaterials, negative refractive index, semiconductors
 title: Negative refraction in semiconductor metamaterials
 authors: A.J. Hoffman, L. Alekseyev, S.S. Howard, K.J. Franz, D. Wasserman, V.A. Podolskiy, E.E. Narimanov, D.L. Sivco, C. Gmachl
 journal: Nature Materials

@@ -39,7 +39,7 @@ help:
 html:
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-clean: clean_css clean_publish clean_js
+clean: clean_css clean_publish
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 clean_publish:
@@ -71,7 +71,7 @@ stopserver:
 	kill -9 `cat srv.pid`
 	@echo 'Stopped Pelican and SimpleHTTPServer processes running in background.'
 
-publish: js css clean
+publish: clean css js
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	cp -r output/* $(PUBLISHDIR)
 	./hashstatic $(PUBLISHDIR)
@@ -91,13 +91,10 @@ bootstrap: clean_css
 css: bootstrap
 	sed -E -i '' '/family=Lato/s/^/\/\//' src/scss/flatly/_bootswatch.scss
 	cd src/scss; sass nikn.scss nikn.css
-	java -jar yuicompressor-2.4.8.jar src/scss/nikn.css > theme/static/css/nikn.min.css
+	java -jar yuicompressor-2.4.8.jar ./src/scss/nikn.css > ./theme/static/css/nikn.min.css
 
-js: clean_js
+./theme/static/js/packed.js: ./src/js/*.js
 	./compressjs src/js/*.js
-	mv packed.js theme/static/js/packed.js
+	mv ./packed.js ./theme/static/js/packed.js
 
-clean_js:
-	rm -rf theme/static/js/packed.js
-
-.PHONY: html help clean regenerate serve devserver publish github css bootstrap clean_css clean_publish clean_js js
+.PHONY: html help clean regenerate serve devserver publish github css bootstrap clean_css clean_publish js

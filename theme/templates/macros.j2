@@ -1,0 +1,49 @@
+{% macro format_date(date) -%}
+  {{ date.strftime('%B') }} {{ date.day }}, {{ date.strftime('%Y') }}
+{%- endmacro %}
+
+{% macro make_title() -%}
+  {%- if page -%}
+    {{ page.title|striptags|title }} | {{ SITENAME }} by {{ AUTHOR }}
+  {%- elif article -%}
+    {{ article.title|striptags }} | {{ SITENAME }} by {{ AUTHOR }}
+  {%- elif tag -%}
+    tagged {{ tag|striptags }} | {{ SITENAME }} by {{ AUTHOR }}
+  {%- elif category -%}
+    {%- if category == 'publication' -%}
+      Publications | {{ SITENAME }} by {{ AUTHOR }}
+    {%- else -%}
+      {{ category|striptags|title }} | {{ SITENAME }} by {{ AUTHOR }}
+    {%- endif  -%}
+  {%- elif author -%}
+    {{ author|striptags }} | {{ SITENAME }}
+  {%- elif output_file == 'index.html' or output_file is re_match('^[0-9]+/index.html$') -%}
+    {{ SITENAME }} | {{ AUTHOR }}
+  {%- else -%}
+    {{ page_name|striptags|title }} | {{ SITENAME }} by {{ AUTHOR }}
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro url() -%}
+  {%- if article -%}
+    {{ SITEURL }}/{{ article.url }}
+  {%- elif page -%}
+    {{ SITEURL }}/{{ page.url }}
+  {%- elif tag -%}
+    {{ SITEURL }}/{{ tag.url }}
+  {%- elif category -%}
+    {{ SITEURL }}/{{ category.url }}
+  {%- elif author -%}
+    {{ SITEURL }}/{{ author.url }}
+  {%- else -%}
+    {{ SITEURL }}
+  {%- endif -%}
+{%- endmacro %}
+
+{% macro hashtags() -%}
+  {%- if article -%}
+    {%- for tag in article.tags -%}
+      {{ tag|replace(' ', '') }}{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endmacro %}

@@ -80,7 +80,7 @@ github: publish
 	cd $(PUBLISHDIR); git add -A; git commit -m "site update"; git push origin gh-pages
 
 clean_css:
-	rm -rf src/scss/bootstrap/ src/scss/flatly/ src/scss/.sass-cache src/scss/nikn.css
+	rm -rf src/scss/bootstrap/ src/scss/flatly/ src/scss/.sass-cache src/scss/*.css
 
 bootstrap: clean_css
 	mkdir -p src/scss/bootstrap/ src/scss/flatly/
@@ -94,7 +94,15 @@ css: bootstrap
 	java -jar yuicompressor-2.4.8.jar ./src/scss/nikn.css > ./theme/static/css/nikn.min.css
 
 ./theme/static/js/packed.js: ./src/js/*.js
-	./compressjs src/js/*.js
-	mv ./packed.js ./theme/static/js/packed.js
+	rm -rf src/js/*.min* src/js/packed*
+	#cd src/js && rm -rf packed.js && cat *.js > packed.js
+	java -jar yuicompressor-2.4.8.jar -o '.js$:.min.js' src/js/*.js
+	cp ./src/js/*.js ./theme/static/js/
 
-.PHONY: html help clean regenerate serve devserver publish github css bootstrap clean_css clean_publish js
+js: ./theme/static/js/packed.js
+
+
+clean_js:
+	rm -rf ./theme/static/js/packed.js
+
+.PHONY: html help clean regenerate serve devserver publish github css bootstrap clean_css clean_publish js clean_js

@@ -1,0 +1,7 @@
+{% import 'macros.j2' as macros with context %}
+<ul class="wpsocialite small">
+<li><a href="http://www.facebook.com/sharer.php?u={{ SITEURL }}/{{ full_name|urlencode }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" data-href="{{ macros.url() }}" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
+<li><a href="http://twitter.com/share" class="socialite twitter-share" {# data-text="tweet text" #}data-url="{{ macros.url() }}" data-counturl="{{ macros.url() }}" data-via="kalefranz" data-hashtags="{{ macros.hashtags() }}" data-count="horizontal" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
+<!--<li><a href="https://plus.google.com/share?url=http://socialitejs.com" class="socialite googleplus-one" data-size="tall" data-href="http://socialitejs.com" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>-->
+<!--<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://notinkansasnow.com&amp;title=NotInKansasNow" class="socialite linkedin-share" data-url="http://j.mp/1knuGFC" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a></li>-->
+</ul>

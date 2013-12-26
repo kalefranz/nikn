@@ -1,11 +1,11 @@
-{% extends "base.html" %}
+{% extends "base.j2" %}
 
 {% block banner %}
     {% if articles_page.number == 1 %}
-      {% include 'include/main_banner.html' %}
+      {% include 'include/main_banner.j2' %}
     {% endif %}
 {% endblock %}
 
 {% block content %}
-    {% include 'include/content_summaries.html' %}
+    {% include 'include/content_summaries.j2' %}
 {% endblock content %}

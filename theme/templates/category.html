@@ -1,13 +1,11 @@
-{% extends "base.html" %}
-
-{% block title %}{{ category }} | {{ SITENAME }} by {{ AUTHOR }}{% endblock %}
+{% extends "base.j2" %}
 
 {% block banner %}
   <h2>Articles in {{ category }}</h2>
 {% endblock %}
 
 {% block content %}
-  {% include 'include/content_summaries.html' %}
+  {% include 'include/content_summaries.j2' %}
 {% endblock content %}
 
 

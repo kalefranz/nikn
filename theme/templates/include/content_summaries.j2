@@ -1,4 +1,4 @@
-{% import 'macros.html' as macros %}
+{% import 'macros.j2' as macros with context %}
 {% for article in articles_page.object_list %}
   <article>
     <header class="preview">
@@ -7,7 +7,7 @@
         <div>
           <time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
           &nbsp;
-          {% include 'include/tag_list.html' %}
+          {% include 'include/tag_list.j2' %}
           <div><span class="tag_label">in</span> <em>{{ article.journal }}</em></div>
         </div>
       {% else %}
@@ -15,13 +15,13 @@
           <span class="tag_label">POSTED </span><time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
           <span class="tag_label">by </span><a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
           &nbsp;
-          {% include 'include/tag_list.html' %}
+          {% include 'include/tag_list.j2' %}
         </div>
       {% endif %}
     </header>
     {{ article.summary }}
     <footer class="preview">
-      {# potentially put social links bar here #}
+      {% include 'include/social_links_horz.j2' %}
       <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-warning btn-xs" role="button" style="float: right;">continue reading</a>
     </footer>
     {# <!--title, date, tags, category, comment count, social?--> #}
@@ -32,4 +32,4 @@
   {% endif %}
 {% endfor %}
 
-{% include 'include/pagination.html' %}
+{% include 'include/pagination.j2' %}

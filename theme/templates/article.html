@@ -1,6 +1,4 @@
-{% extends "base.html" %}
-
-{% block title %}{{ article.title|striptags }} | {{ SITENAME }}{% endblock %}
+{% extends "base.j2" %}
 
 {% block head %}
   {{ super() }}
@@ -24,7 +22,7 @@
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
         <div class="tags">
           <span class="tag_label">TAGGED</span>
-          {% include 'include/tag_list.html' %}
+          {% include 'include/tag_list.j2' %}
         </div>
         <blockquote>
           <div class="citation">{{ article.authors|format_authors }},
@@ -39,6 +37,8 @@
             {% endif %}
           </div>
         </blockquote>
+
+        {% include 'include/social_links.j2' %}
       </header>
 
       <h2>Abstract</h2>
@@ -54,11 +54,12 @@
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
         <div class="tags" style="padding: 0;">
           <span class="tag_label">TAGGED</span>
-          {% include 'include/tag_list.html' %}
+          {% include 'include/tag_list.j2' %}
         </div>
         <div><span class="tag_label">POSTED</span> <time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
           <span class="tag_label">by </span><a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
         </div>
+        {% include 'include/social_links.j2' %}
       </header>
       {{ article.content }}
     </article>

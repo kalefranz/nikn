@@ -1,7 +1,20 @@
 {% import 'macros.j2' as macros with context %}
-<ul class="wpsocialite small">
-<li><a href="http://www.facebook.com/sharer.php?u={{ SITEURL }}/{{ full_name|urlencode }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" data-href="{{ macros.url() }}" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
-<li><a href="http://twitter.com/share" class="socialite twitter-share" {# data-text="tweet text" #}data-url="{{ macros.url() }}" data-counturl="{{ macros.url() }}" data-via="kalefranz" data-hashtags="{{ macros.hashtags() }}" data-count="horizontal" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
-<!--<li><a href="https://plus.google.com/share?url=http://socialitejs.com" class="socialite googleplus-one" data-size="tall" data-href="http://socialitejs.com" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>-->
-<!--<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://notinkansasnow.com&amp;title=NotInKansasNow" class="socialite linkedin-share" data-url="http://j.mp/1knuGFC" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a></li>-->
-</ul>
+<div style="display: inline-block; width: 360px;">
+  <ul class="wpsocialite small">
+    <li><a href="http://www.facebook.com/sharer.php?u={{ macros.url() }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" data-href="{{ macros.url() }}" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
+    <li><a href="http://twitter.com/share" class="socialite twitter-share" {# data-text="tweet text"#} data-url="{{ macros.url() }}" data-counturl="{{ macros.url() }}" data-via="kalefranz" data-hashtags="{{ macros.hashtags() }}" data-count="horizontal" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
+    <li><a href="https://plus.google.com/share?url={{ macros.url() }}" class="socialite googleplus-one" data-size="medium" data-href="{{ macros.url() }}" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>
+    <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ macros.url() }}&amp;title={{ macros.make_title()|urlencode }}" class="socialite linkedin-share" data-url="{{ macros.url() }}" data-counter="right" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a></li>
+  </ul>
+</div>
+<a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-warning btn-xs" role="button" style="float: right;">continue reading</a>
+<!--
+<table class="table" style="width: 100%; table-layout: fixed;">
+    <tr>
+      <td><a href="http://www.facebook.com/sharer.php?u={{ macros.url() }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" style="width: 150px; height: 30px; background-position: 0 -90px;" data-href="{{ macros.url() }}" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></td>
+      <td><a href="http://twitter.com/share" class="socialite twitter-share" style="width: 150px; height: 30px; background-position: 0 0;" {# data-text="tweet text"#} data-url="{{ macros.url() }}" data-counturl="{{ macros.url() }}" data-via="kalefranz" data-hashtags="{{ macros.hashtags() }}" data-count="horizontal" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></td>
+      <td><a href="https://plus.google.com/share?url={{ macros.url() }}" class="socialite googleplus-one" style="width: 150px; height: 30px; background-position: 0 -45px;" data-size="medium" data-href="{{ macros.url() }}" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></td>
+      <td style="text-align:right; width: 80%;"><a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-warning btn-xs" role="button" style="float: right;">continue reading</a></td>
+    </tr>
+</table>
+-->

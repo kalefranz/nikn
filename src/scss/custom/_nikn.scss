@@ -232,40 +232,20 @@ article header.main_article {
     margin-bottom: 16px;
 }
 
-//.cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-//* html .cf { zoom: 1; }
-//*:first-child+html .cf { zoom: 1; }
 .vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-//.social-buttons { display: block; list-style: none; padding: 0; margin: 20px; }
-//.social-buttons > li { display: block; margin: 0; padding: 10px; float: left; }
-//.social-buttons .socialite { display: block; position: relative; background: url('/static/asset/social-sprite.png') 0 0 no-repeat; }
-//.social-buttons .socialite-loaded { background: none !important; }
-//.social-buttons .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
-//.social-buttons .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
-//.social-buttons .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
-//.social-buttons .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
-
-//.wpsocialite .vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-//.wpsocialite.large { display: block; list-style: none; padding: 0; margin: 20px; overflow: visible; }
-//.wpsocialite.large:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-//.wpsocialite.large > li { display: block; margin: 0; padding: 10px; float: left; }
-//.wpsocialite.large .socialite { display: block; position: relative; background: url('social-sprite.png') 0 0 no-repeat; }
-//.wpsocialite.large .socialite-loaded { background: none !important; }
-//.wpsocialite.large .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
-//.wpsocialite.large .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
-//.wpsocialite.large .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
-//.wpsocialite.large .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
-//.wpsocialite.large .pinterest-pinit { width: 50px; height: 65px; background-position: -367px 0; }
-//.wpsocialite.large .stumbleupon-share { width: 50px; height: 65px; background-position: -439px 0; }
-//.wpsocialite.large .twitter-follow { width: 56px; height: 65px; background-position: -509px 0; }
-//.wpsocialite.large .twitter-follow.socialite-loaded{ width:100%; }
-//.wpsocialite.large .vkontakte-like { width: 50px; height: 65px; background:red; }
-
-
-//.wpsocialite.small { display: block; list-style: none; overflow: visible; width: 100%; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
-.wpsocialite.small { display: table; list-style: none; overflow: visible; width: 100%; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
-//.wpsocialite.small > li { margin: 0; display:inline; float:left; width:20%;}  // width:20%;
-//.wpsocialite.small .socialite { display: block; position: relative; width: 150px; height: 30px;}
+.wpsocialite.large { display: table; width: 100%; list-style: none; padding: 0; margin: 20px; overflow: visible; }
+.wpsocialite.large > li { display: table-cell; margin: 0; padding: 10px; float: left; }
+.wpsocialite.large .socialite { display: block; position: relative; }
+.wpsocialite.large .socialite-loaded { background: none !important; }
+.wpsocialite.large .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
+.wpsocialite.large .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
+.wpsocialite.large .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
+.wpsocialite.large .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
+.wpsocialite.large .pinterest-pinit { width: 50px; height: 65px; background-position: -367px 0; }
+.wpsocialite.large .stumbleupon-share { width: 50px; height: 65px; background-position: -439px 0; }
+.wpsocialite.large .twitter-follow { width: 56px; height: 65px; background-position: -509px 0; }
+.wpsocialite.large .twitter-follow.socialite-loaded{ width:100%; }
+.wpsocialite.small { display: table; width: 100%; list-style: none; overflow: visible; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
 .wpsocialite.small > li {display: table-cell;}
 .wpsocialite.small .socialite { display: block; position: relative; width: 85px; height: 30px;}
 .wpsocialite.small .socialite-loaded { background: none; }
@@ -276,12 +256,6 @@ article header.main_article {
 .wpsocialite.small .pinterest-pinit { background-position: 0 -175px; }
 .wpsocialite.small .stumbleupon-share { background-position: 0 -225px; }
 .wpsocialite.small .twitter-follow.socialite-loaded{ width:200px; }
-
-//.socialite { display: block; position: relative; width: 150px; height: 30px;}
-//.socialite-loaded { background: none !important; }
-//.facebook-like { background-position: 0 -90px; }
-//.twitter-share { background-position: 0 0; }
-
 
 @media screen and (max-width: $screen-phone) { // < 480px
     .navbar-brand {

@@ -33,16 +33,16 @@
       {%- if q == 1 -%}
         <a href="{{ SITEURL }}{{ base_url }}/">
       {%- else -%}
-        <a href="{{ SITEURL }}{{ base_url }}/page/{{ q }}/">
+        <a href="{{ SITEURL }}{{ base_url }}/{{ q }}/">
       {%- endif -%}
       {{ q }}</a></li>
     {% endfor %}
 
     {%if articles_page.number == articles_paginator.num_pages %}
-      <li class="disabled"><a href="{{ SITEURL }}{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
+      <li class="disabled"><a href="{{ SITEURL }}{{ base_url }}/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
     {% else %}
-      <li><a href="{{ SITEURL }}{{ base_url }}/page/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
-      {# style="background-color: rgba(0, 0, 0, 0); padding: 8px 13px; border:3px solid rgb(24, 188, 156); color: black;" #}
+      <li><a href="{{ SITEURL }}{{ base_url }}/{{ articles_paginator.num_pages }}/">&raquo;</a></li>
+{#      style="background-color: rgba(0, 0, 0, 0); padding: 8px 13px; border:3px solid rgb(24, 188, 156); color: black;" #}
     {% endif %}
     </ul>
   </div>

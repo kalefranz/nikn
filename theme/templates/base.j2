@@ -4,17 +4,13 @@
 <head>
   {% block head %}
     <title>{% block title %}{{ macros.make_title() }}{% endblock title %}</title>
-    {# {{ SITENAME }} | by Kale J. Franz, PhD #}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ AUTHOR }}">
     <meta name="description" content="">
-
     <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Ubuntu|Josefin+Slab:700|Crimson+Text' type='text/css'>
     <link rel="stylesheet" href="{{ SITEURL }}/static/css/nikn.min.css" type='text/css'>
-
     <link rel="icon" href="{{ SITEURL }}/static/asset/favicon.png">
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.min.js"></script>
@@ -25,7 +21,6 @@
 
 {#
 <link rel="canonical" href="http://arstechnica.com/tech-policy/2013/01/how-newegg-crushed-the-shopping-cart-patent-and-saved-online-retail/" />
-
 <link rel="shorturl" href="http://ars.to/UQO5lb" />
 
 <meta name="description" content="It&#39;s game over for a patent troll that sued nearly 50 big retailers. " />
@@ -49,9 +44,7 @@
 <body>
 
 <div id="wrap_not_footer">
-
   {% include 'include/main_nav.j2' %}
-
   <div class="container">
     {% block banner %}{% endblock %}
     <div class="row">
@@ -63,14 +56,11 @@
           {% include 'include/main_aside.j2' %}
         {% endblock %}
       </aside>
-    </div><!-- /row -->
-  </div><!-- /container -->
+    </div>
+  </div>
+</div>
 
-</div><!-- /wrap_not_footer -->
-
-{% block foot %}
-  {% include 'include/main_footer.j2' %}
-{% endblock %}
+{% block foot %}{% include 'include/main_footer.j2' %}{% endblock %}
 
 {% include 'include/js.j2' %}
 

@@ -4184,11 +4184,70 @@ article header.main_article {
   position: absolute;
   width: 1px; }
 
+.wpsocialite.large {
+  display: table;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+  overflow: visible; }
+
+.wpsocialite.large > li {
+  display: table-cell;
+  margin: 0;
+  padding: 10px;
+  float: left; }
+
+.wpsocialite.large .socialite {
+  display: block;
+  position: relative; }
+
+.wpsocialite.large .socialite-loaded {
+  background: none !important; }
+
+.wpsocialite.large .twitter-share {
+  width: 55px;
+  height: 65px;
+  background-position: 0 0; }
+
+.wpsocialite.large .googleplus-one {
+  width: 50px;
+  height: 65px;
+  background-position: -75px 0; }
+
+.wpsocialite.large .facebook-like {
+  width: 50px;
+  height: 65px;
+  background-position: -145px 0; }
+
+.wpsocialite.large .linkedin-share {
+  width: 60px;
+  height: 65px;
+  background-position: -215px 0; }
+
+.wpsocialite.large .pinterest-pinit {
+  width: 50px;
+  height: 65px;
+  background-position: -367px 0; }
+
+.wpsocialite.large .stumbleupon-share {
+  width: 50px;
+  height: 65px;
+  background-position: -439px 0; }
+
+.wpsocialite.large .twitter-follow {
+  width: 56px;
+  height: 65px;
+  background-position: -509px 0; }
+
+.wpsocialite.large .twitter-follow.socialite-loaded {
+  width: 100%; }
+
 .wpsocialite.small {
   display: table;
+  width: 100%;
   list-style: none;
   overflow: visible;
-  width: 100%;
   padding: 0;
   margin: 0; }
 

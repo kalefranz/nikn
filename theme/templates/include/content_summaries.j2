@@ -6,9 +6,10 @@
       {% if article.category == 'publication' %}
         <div>
           <span class="tag_label">PUBLISHED </span><time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
-          &nbsp;
-          {% include 'include/tag_list.j2' %}
-          <div><span class="tag_label">in</span> <em>{{ article.journal }}</em></div>
+          <span class="tag_label">in</span> <em>{{ article.journal }}</em>
+          <div>
+            {% include 'include/tag_list.j2' %}
+          </div>
         </div>
       {% else %}
         <div>
@@ -21,8 +22,8 @@
     </header>
     {{ article.summary }}
     <footer class="preview clearfix">
-{#      <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-warning btn-xs" role="button" style="float: right;">continue reading</a>#}
       {% include 'include/social_links_horz.j2' %}
+      <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-warning btn-xs" role="button" style="float: right;">continue reading</a>
     </footer>
     {# <!--title, date, tags, category, comment count, social?--> #}
   </article>

@@ -16,7 +16,45 @@
 {% endblock %}
 
 {% block content %}
-  {% if category and category == 'publication' %}
+  {% if 'thesis' in article.tags %}
+    <article>
+      <header class="main_article">
+        <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+        <div class="tags">
+          <span class="tag_label">TAGGED</span>
+          {% include 'include/tag_list.j2' %}
+        </div>
+        <div class="clearfix" style="margin-top: 8px;">
+          {% include 'include/social_links_horz.j2' %}
+        </div>
+      </header>
+
+      <table class="table">
+        <tr>
+          <td>Abstract</td>
+          <td><a href="{{ SITEURL }}/static/pdf/{{ article.local_id }}_abstract.pdf" rel="alternate" title="PDF Reprint" class="btn btn-warning btn-xs" role="button"><span data-icon="q" style="vertical-align: -1.5px; line-height: 1px;"></span> download</a></td>
+        </tr>
+        <tr>
+          <td>Introduction (3 MB)</td>
+          <td><a href="{{ SITEURL }}/static/pdf/{{ article.local_id }}_introduction.pdf" rel="alternate" title="PDF Reprint" class="btn btn-warning btn-xs" role="button"><span data-icon="q" style="vertical-align: -1.5px; line-height: 1px;"></span> download</a></td>
+        </tr>
+        <tr>
+          <td>Quantum Cascade Laser Design and Operation Theory (1.3 MB)</td>
+          <td><a href="{{ SITEURL }}/static/pdf/{{ article.local_id }}_chpt2.pdf" rel="alternate" title="PDF Reprint" class="btn btn-warning btn-xs" role="button"><span data-icon="q" style="vertical-align: -1.5px; line-height: 1px;"></span> download</a></td>
+        </tr>
+        <tr>
+          <td>Full Thesis (12.4 MB)</td>
+          <td><a href="{{ SITEURL }}/static/pdf/{{ article.local_id }}.pdf" download="{{ article.title|striptags }}.pdf" rel="alternate" title="PDF Reprint" class="btn btn-warning btn-xs" role="button"><span data-icon="q" style="vertical-align: -1.5px; line-height: 1px;"></span> download</a></td>
+        </tr>
+        <tr><td></td><td></td></tr>
+      </table>
+
+      <h2>Abstract</h2>
+
+      {{ article.content }}
+
+    </article>
+  {% elif category and category == 'publication' %}
     <article>
       <header class="main_article">
         <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
@@ -60,11 +98,13 @@
           <span class="tag_label">TAGGED</span>
           {% include 'include/tag_list.j2' %}
         </div>
-        <div class="clearfix" style="margin-top: 3px;">
+        <div class="clearfix" style="margin-top: 5px;">
           {% include 'include/social_links_horz.j2' %}
         </div>
       </header>
+
       {{ article.content }}
+
     </article>
   {% endif %}
 

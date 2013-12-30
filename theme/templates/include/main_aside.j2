@@ -12,7 +12,7 @@
     <a href="#" class="btn btn-info social_button_item" data-icon="K"></a>
   </div>
 
-  <div class="well well-sm clearfix" style="width:100%; background-color: #3ee5c3; padding-bottom: 6px; margin-bottom: 12px;">
+  <div class="well well-sm clearfix" style="width:100%; background-color: #3ee5c3; padding-bottom: 5px; margin-bottom: 12px;">
     <ul class="wpsocialite large">
       <li><a href="http://www.facebook.com/sharer.php?u={{ SITEURL }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" data-href="{{ SITEURL }}" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
       <li><a href="http://twitter.com/share" class="socialite twitter-share" {# data-text="tweet text" #}data-url={{ SITEURL }}" data-counturl="{{ SITEURL }}" data-via="kalefranz" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
@@ -29,11 +29,7 @@
   </div>
   <div class="panel panel-info">
     <div class="panel-heading">
-      <h3 class="panel-title label_bold">
-        <span style="font-size: 120%;">
-          <span class="logo_not">Not</span><span class="logo_in">In</span><span class="logo_kansas">Kansas</span><span class="logo_now">now</span>
-        </span>
-        &nbsp;TAGS</h3>
+      <h3 class="panel-title label_bold">TAGS &amp; TOPICS</h3>
     </div>
     <div class="panel-body">
       {% for tag in tag_cloud %}

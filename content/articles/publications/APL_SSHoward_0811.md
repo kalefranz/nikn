@@ -3,6 +3,7 @@ category: publication
 tags: lasers, QCLs
 title: The effect of injector barrier thickness and doping level on current transport and optical transition width in a λ ~ 8 µm QC structure
 authors: S.S. Howard, D.P. Howard, K.J. Franz, A.J. Hoffman, D.L. Sivco, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 93
 page: 191107

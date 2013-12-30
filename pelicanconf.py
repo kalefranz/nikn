@@ -1,10 +1,12 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 import collections
+from datetime import datetime
 import jinja2
 import re
 
-AUTHOR = u'Kale J. Franz, PhD'
+AUTHOR = u'Kale Franz'
+AUTHOR_FULL = u'Kale J. Franz, PhD'
 SITENAME = u'NotInKansasNow'
 SITEURL = ''
 
@@ -37,8 +39,8 @@ CATEGORY_URL = "{slug}/"
 CATEGORY_SAVE_AS = "{slug}/index.html"
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = '{slug}.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 AUTHOR_URL = "{slug}/"
 AUTHOR_SAVE_AS = "{slug}/index.html"
 
@@ -136,7 +138,8 @@ def get_context(c):
 
 JINJA_GLOBALS = {'context': get_context,
                  'callable': callable,
-                 'dirvar': dir
+                 'dirvar': dir,
+                 'now': datetime.now
                 }
 
 

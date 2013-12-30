@@ -3,6 +3,7 @@ category: publication
 tags: QCLs, lasers, spectral tuning
 title: A widely voltage-tunable quantum cascade laser based on 'two-step' coupling
 authors: Y. Yao, K.J. Franz, X.J. Wang, J.-Y. Fan, and C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 95
 page: 021105

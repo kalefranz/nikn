@@ -3,6 +3,7 @@ category: publication
 tags: II-VI semiconductors, molecular beam epitaxy, QCLs
 title: Growth and Characterization of Zn<sub>x</sub>Cd<sub>1-x</sub>Se/Zn<sub>x’</sub>Cd<sub>y’</sub>Mg<sub>1-x’-y’</sub>Se Asymmetric Coupled Quantum Well Structures for Quantum Cascade Laser Applications
 authors: W.O. Charles, A. Shen, K.J. Franz, C. Gmachl, Q. Zhang, Y. Gong, G.F. Neumark, M.C. Tamargo
+author: Kale J. Franz, PhD
 journal: Journal of Vacuum Science & Technology B
 volume: 26
 page: 1171

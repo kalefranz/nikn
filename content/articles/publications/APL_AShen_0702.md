@@ -3,6 +3,7 @@ category: publication
 tags: quantum dots, II-VI semiconductors
 title: Intersubband absorption in CdSe/ZnCdMgSe self-assembled quantum dot multi-layers
 authors: A. Shen, H. Lu, M.C. Tamargo, W. Charles, I. Yokomizo, K.J. Franz, C. Gmachl, S.K. Zhang, X. Zhou, R.R. Alfano, H.C. Liu
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 90
 page: 071910

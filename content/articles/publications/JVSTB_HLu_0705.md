@@ -3,6 +3,7 @@ category: publication
 tags: II-VI semiconductors, quantum wells
 title: Study of intersubband transitions of Zn<sub>x</sub>Cd<sub>1−x</sub>Se/Zn<sub>x'</sub>Cd<sub>y'</sub>Mg<sub>1−x'−y'</sub>Se multiple quantum wells grown by molecular beam epitaxy for midinfrared device applications
 authors: H. Lu, A. Shen, M.C. Tamargo, W. Charles, I. Yokomizo, M. Munoz, Y. Gong, G.F. Neumark, K.J. Franz, C. Gmachl, C.Y. Song, H.C. Liu
+author: Kale J. Franz, PhD
 journal: Journal of Vacuum Science & Technology B
 volume: 25
 page: 1103

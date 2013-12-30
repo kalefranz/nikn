@@ -3,6 +3,7 @@ category: publication
 tags: lasers, QCLs, spectral tuning
 title: Voltage Tunability of Quantum Cascade Lasers
 authors: Y. Yao, Z.J. Liu, A.J. Hoffman, K.J. Franz, C.F. Gmachl
+author: Kale J. Franz, PhD
 journal: IEEE Journal of Quantum Electronics
 volume: 45
 page: 730

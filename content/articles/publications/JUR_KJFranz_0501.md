@@ -3,6 +3,7 @@ category: publication
 tags: carbon nanotubes
 title: Carbon single-wall nanotube growth in a volumetrically confined arc discharge system
 authors: K.J. Franz, J.L. Alleman, K.M. Jones, A.C. Dillon, M.J. Heben
+author: Kale J. Franz, PhD
 journal: DOE Journal of Undergraduate Research
 volume: 4
 page: 66

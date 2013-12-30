@@ -3,6 +3,7 @@ category: publication
 tags: patents, dna
 title: DNA Dilemma: A perspective on U.S. Patent and Trademark Office philosophy concerning life patents
 authors: K.J. Franz and P.P. Faletra
+author: Kale J. Franz, PhD
 journal: DOE Journal of Undergraduate Research
 volume: 2
 page: 25

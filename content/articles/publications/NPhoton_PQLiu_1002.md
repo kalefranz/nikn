@@ -3,6 +3,7 @@ category: publication
 tags: QCLs, lasers
 title: Highly Power-efficient Quantum Cascade Lasers
 authors: P.Q. Liu, A.J. Hoffman, M.D. Escarra, K.J. Franz, J.B. Khurgin, Y. Dikmelik, X.J. Wang, J.-Y. Fan, C.F. Gmachl
+author: Kale J. Franz, PhD
 journal: Nature Photonics
 volume: 4
 page: 95

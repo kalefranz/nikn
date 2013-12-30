@@ -2,7 +2,8 @@ date: 2009-02-03
 category: publication
 tags: QCLs, lasers
 title: Voltage tuning of gain spectra in quantum cascade lasers
-authors: Y. Yao, K.J. Franz, Z. Liu, A.J. Hoffman, C.F. Gmachl,
+authors: Y. Yao, K.J. Franz, Z. Liu, A.J. Hoffman, C.F. Gmachl
+author: Kale J. Franz, PhD
 journal: Proceedings of SPIE
 volume: 7230
 page: 723012

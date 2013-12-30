@@ -3,6 +3,7 @@ category: publication
 tags: phonons, QCLs, lasers
 title: Quantum cascade lasers with voltage defect of less than one longitudinal optical phonon energy
 authors: M.D. Escarra, A.J. Hoffman, K.J. Franz, S.S. Howard, R. Cendejas, X.J. Wang, J.-Y. Fan, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 95
 page: 251114

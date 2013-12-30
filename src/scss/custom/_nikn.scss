@@ -66,7 +66,7 @@ hr {
     height: 3px;
     border: 0;
     border-top: 3px solid #C0392B;
-    margin: 1em 0;
+    margin: 12px 0 20px;
     padding: 0;
 }
 .navbar-brand {
@@ -150,8 +150,11 @@ a:hover .navbar-brand .logo_tornado {
     font-size: 80%;
     margin: 3px;
 }
-.tag_list {
-    display: inline-block;
+.tag_label {
+    font-family: 'Ubuntu', sans-serif;
+    color: #aaa;
+    font-weight: 700;
+    font-size: 70%;
 }
 .tag_button {
     margin: 3px;
@@ -190,12 +193,6 @@ h1 a:hover {
 .tags {
     padding: 10px 0;
 }
-.tag_label {
-    font-family: 'Ubuntu', sans-serif;
-    color: #aaa;
-    font-weight: 700;
-    font-size: 70%;
-}
 .label_bold {
     font-family: 'Ubuntu', sans-serif;
     color: white;
@@ -219,26 +216,22 @@ header.preview {
     margin-bottom: 12px;
 }
 footer.preview {
-    //overflow: hidden;
     margin-top: 12px;
 }
-//footer.preview:after {
-//  visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;
-//}
 article h2 {
     color: #aaa;
 }
 article header.main_article {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
-.wpsocialite.large { display: table; width: 100%; list-style: none; padding: 0; margin: 20px; overflow: visible; }
-.wpsocialite.large > li { display: table-cell; margin: 0; padding: 10px; float: left; }
-.wpsocialite.large .socialite { display: block; position: relative; }
+.wpsocialite.large { display: table; table-layout: fixed; width: 100%; list-style: none; padding: 0; margin: 0; overflow: visible;}
+.wpsocialite.large > li { display: table-cell; text-align: center; float: none; position: relative; white-space: nowrap; margin-left: auto; margin-right: auto; width: 1%;}
+.wpsocialite.large .socialite { display: block; position: relative; margin-left: auto; margin-right: auto; }
 .wpsocialite.large .socialite-loaded { background: none !important; }
 .wpsocialite.large .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
-.wpsocialite.large .googleplus-one { width: 50px; height: 65px; background-position: -75px 0; }
+.wpsocialite.large .googleplus-one { width: 50px; height: 65px; background-position: -82px 0; }
 .wpsocialite.large .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
 .wpsocialite.large .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
 .wpsocialite.large .pinterest-pinit { width: 50px; height: 65px; background-position: -367px 0; }
@@ -247,7 +240,7 @@ article header.main_article {
 .wpsocialite.large .twitter-follow.socialite-loaded{ width:100%; }
 .wpsocialite.small { display: table; width: 100%; list-style: none; overflow: visible; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
 .wpsocialite.small > li {display: table-cell;}
-.wpsocialite.small .socialite { display: block; position: relative; width: 85px; height: 30px;}
+.wpsocialite.small .socialite { display: block; position: relative; width: 85px; height: 23px;}
 .wpsocialite.small .socialite-loaded { background: none; }
 .wpsocialite.small .twitter-share { background-position: 0 0; }
 .wpsocialite.small .googleplus-one { background-position: 0 -45px; }
@@ -256,6 +249,10 @@ article header.main_article {
 .wpsocialite.small .pinterest-pinit { background-position: 0 -175px; }
 .wpsocialite.small .stumbleupon-share { background-position: 0 -225px; }
 .wpsocialite.small .twitter-follow.socialite-loaded{ width:200px; }
+
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
+    width: 100% !important;
+}
 
 @media screen and (max-width: $screen-phone) { // < 480px
     .navbar-brand {

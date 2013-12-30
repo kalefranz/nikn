@@ -3,6 +3,7 @@ category: publication
 tags: QCLs, II-VI semiconductors, lasers
 title: Room temperature and narrow intersubband electroluminescence from ZnCdSe/ZnCdMgSe quantum cascade laser structures
 authors: Y. Yao, A. Alfaro-Martinez, K.J. Franz, W.O. Charles, A. Shen, M.C. Tamargo, C.F. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 95
 page: 041113

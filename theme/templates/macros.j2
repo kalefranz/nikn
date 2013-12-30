@@ -6,21 +6,25 @@
   {%- if page -%}
     {{ page.title|striptags|title }} | {{ SITENAME }} by {{ AUTHOR }}
   {%- elif article -%}
-    {{ article.title|striptags }} | {{ SITENAME }} by {{ AUTHOR }}
+    {%- if category == 'publication' -%}
+      {{ article.title|striptags }} | {{ SITENAME }} by {{ AUTHOR_FULL }}
+    {%- else -%}
+      {{ article.title|striptags }} | {{ SITENAME }} by {{ AUTHOR }}
+    {%- endif  -%}
   {%- elif tag -%}
-    tagged {{ tag|striptags }} | {{ SITENAME }} by {{ AUTHOR }}
+    tagged {{ tag|striptags }} | {{ SITENAME }} by {{ AUTHOR_FULL }}
   {%- elif category -%}
     {%- if category == 'publication' -%}
-      Publications | {{ SITENAME }} by {{ AUTHOR }}
+      Publications | {{ SITENAME }} by {{ AUTHOR_FULL }}
     {%- else -%}
       {{ category|striptags|title }} | {{ SITENAME }} by {{ AUTHOR }}
     {%- endif  -%}
   {%- elif author -%}
     {{ author|striptags }} | {{ SITENAME }}
   {%- elif output_file == 'index.html' or output_file is re_match('^[0-9]+/index.html$') -%}
-    {{ SITENAME }} | {{ AUTHOR }}
+    {{ SITENAME }} | {{ AUTHOR_FULL }}
   {%- else -%}
-    {{ page_name|striptags|title }} | {{ SITENAME }} by {{ AUTHOR }}
+    {{ page_name|striptags|title }} | {{ SITENAME }} by {{ AUTHOR_FULL }}
   {%- endif -%}
 {%- endmacro %}
 

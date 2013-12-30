@@ -3,6 +3,7 @@ category: publication
 tags: metamaterials, semiconductors
 title: Mid-infrared Semiconductor Optical Metamaterials
 authors: A.J. Hoffman, L. Alekseyev, A. Sridhar, P.X. Braun, S.S. Howard, K.J. Franz, D. Wasserman, V.A. Podolskiy, E.E. Narimanov, D.L. Sivco, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Journal of Applied Physics
 volume: 105
 page: 122411

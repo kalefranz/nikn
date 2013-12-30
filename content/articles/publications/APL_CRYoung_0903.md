@@ -3,6 +3,7 @@ category: publication
 tags: lasers, QCLs, infrared spectroscopy
 title: Wavelength selection for quantum cascade lasers by cavity length
 authors: C.R. Young, R. Cendejas, S.S. Howard, W. Sanchez-Vaynshteyn, A.J. Hoffman, K.J. Franz, Y. Yao, B. Mizaikoff, X. Wang, J.-Y. Fan, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 94
 page: 091109

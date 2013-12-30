@@ -3,6 +3,7 @@ category: publication
 tags: QCLs, lasers
 title: Lasing-induced reduction of core heating in high wall plug efficiency quantum cascade lasers
 authors: A.J. Hoffman, P.X. Braun, M.D. Escarra, K.J. Franz, X. Wang, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 94
 page: 041101

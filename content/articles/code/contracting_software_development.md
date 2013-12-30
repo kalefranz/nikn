@@ -4,7 +4,7 @@ tags: software management, contracting
 title: On Contracting Software Development
 local_id:
 
-**Core Assertion:** The company owns the code, not the contractor.
+> **Core Assertion:** The company owns the code, not the contractor.
 
 If you're a contractor, why wouldn't you want to keep the actual source to
 yourself?  You lock the company your contacting for into using your services in

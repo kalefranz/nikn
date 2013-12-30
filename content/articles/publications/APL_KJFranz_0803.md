@@ -3,6 +3,7 @@ category: publication
 tags: II-VI semiconductors, QCLs, optoelectronics
 title: ZnCdSe/ZnCdMgSe Quantum Cascade Electroluminescence
 authors: K.J. Franz, W.O. Charles, A. Shen, A.J. Hoffman, M.C. Tamargo, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 92
 page: 121105

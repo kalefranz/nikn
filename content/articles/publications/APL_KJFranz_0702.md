@@ -3,6 +3,7 @@ category: publication
 tags: lasers, QCLs
 title: Evidence of cascaded emission in a dual-wavelength Quantum Cascade laser
 authors: K.J. Franz, D. Wasserman, A.J. Hoffman, D.C. Jangraw, K.-T. Shiu, S.R. Forest, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 90
 page: 091104

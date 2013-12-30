@@ -3,6 +3,7 @@ category: publication
 tags: lasers, QCLs, phonons
 title: High <em>k</em>-space lasing in a dual wavelength quantum cascade laser
 authors: K.J. Franz, S. Menzel, A.J. Hoffman, D. Wasserman, J. Cockburn, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Nature Photonics
 volume: 3
 page: 50

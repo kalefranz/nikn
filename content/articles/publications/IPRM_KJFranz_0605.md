@@ -3,6 +3,7 @@ category: publication
 tags: QCLs, lasers
 title: A dual-wavelength quantum cascade laser with two optical transitions in each active region
 authors: K.J Franz, K.-T. Shiu, S.R. Forrest, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Proceedings of the Conference on Indium Phosphide and Related Materials
 volume: 2006
 page: 26

@@ -3,6 +3,7 @@ category: publication
 tags: quantum dots, II-VI semiconductors
 title: Optical Properties of Heavily Doped n-type CdSe Quantum Dots for Intersubband Device Applications
 authors: S. Zhang, X. Zhou, A. Shen, W. Wang, R. Alfano, H. Lu, W.O. Charles, I. Yokomizo, M.C. Tamargo, K.J. Franz, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Proceedings of the Materials Research Society
 volume: 959E
 page: 0959-M06-05

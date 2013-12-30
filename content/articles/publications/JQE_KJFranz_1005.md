@@ -3,6 +3,7 @@ category: publication
 tags: QCLs, lasers
 title: Short Injector Quantum Cascade Lasers
 authors: K.J. Franz, M.D. Escarra, A.J. Hoffman, P.Q. Liu, J.J.J. Raftery, S.S. Howard, Y. Dikmelik, J.B. Khurgin, X.J. Wang, J.-Y. Fan, C. Gmachl
+author: Kale J. Franz, PhD
 journal: IEEE Journal of Quantum Electronics
 volume: 46
 page: 591

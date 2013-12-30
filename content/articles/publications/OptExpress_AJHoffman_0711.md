@@ -3,6 +3,7 @@ category: publication
 tags: lasers, QCLs
 title: Low voltage-defect quantum cascade laser with heterogeneous injector regions
 authors: A.J. Hoffman, S. Schartner, S.S. Howard, K.J. Franz, F. Towner, C. Gmachl
+author: Kale J. Franz, PhD
 journal: Optics Express
 volume: 15
 page: 15818

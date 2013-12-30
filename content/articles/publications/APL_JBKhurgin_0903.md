@@ -3,6 +3,7 @@ category: publication
 tags: lasers, electron transport, QCLs
 title: Role of interface roughness in the transport and lasing characteristics of quantum-cascade lasers
 authors: J.B. Khurgin, Y. Dikmelik, P.Q. Liu, A.J. Hoffman, M.D. Escarra, K.J. Franz, C.F. Gmachl
+author: Kale J. Franz, PhD
 journal: Applied Physics Letters
 volume: 94
 page: 091101

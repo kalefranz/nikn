@@ -5,18 +5,27 @@
       <h2><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2>
       {% if article.category == 'publication' %}
         <div>
-          <span class="tag_label">PUBLISHED </span><time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
-          <span class="tag_label">in</span> <em>{{ article.journal }}</em>
-          <div>
-            {% include 'include/tag_list.j2' %}
+          <div style="display: inline-block; padding-right: 3px;">
+            <span class="tag_label">PUBLISHED</span>&nbsp;<time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
+          </div>
+          <div style="display: inline-block; padding-right: 6px;">
+            <span class="tag_label">in</span>&nbsp;<em>{{ article.journal }}</em>
+          </div>
+          <div style="display: block; padding-right: 3px;">
+            <span class="tag_label">TAGGED</span>&nbsp;{% include 'include/tag_list.j2' %}
           </div>
         </div>
       {% else %}
         <div>
-          <span class="tag_label">POSTED </span><time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
-          <span class="tag_label">by </span><a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-          &nbsp;
-          {% include 'include/tag_list.j2' %}
+          <div style="display: inline-block; padding-right: 3px;">
+            <span class="tag_label">POSTED</span>&nbsp;<time datetime="{{ article.date.isoformat() }}" class="text-warning">{{ macros.format_date(article.date) }}</time>
+          </div>
+          <div style="display: inline-block; padding-right: 6px;">
+            <span class="tag_label">by</span>&nbsp;<a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+          </div>
+          <div style="display: block; padding-right: 3px;">
+            <span class="tag_label">TAGGED</span>&nbsp;{% include 'include/tag_list.j2' %}
+          </div>
         </div>
       {% endif %}
     </header>
@@ -25,7 +34,7 @@
       {% include 'include/social_links_horz.j2' %}
       <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-warning btn-xs" role="button" style="float: right;">continue reading</a>
     </footer>
-    {# <!--title, date, tags, category, comment count, social?--> #}
+{# <!--title, date, tags, category, comment count, social?--> #}
   </article>
 
   {% if not loop.last %}

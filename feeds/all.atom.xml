@@ -164,7 +164,38 @@ negative refraction. For the highly doped quantum well superlattices, we
 demonstrate anomalous reflection due to the strong anisotropy of the material
 but a determination of the sign of refraction is still difficult. This new
 class of semiconductor metamaterials has great potential for waveguiding and
-imaging applications in the long-wave infrared.&lt;/p&gt;</summary><category term="metamaterials"></category><category term="semiconductors"></category></entry><entry><title>Voltage Tunability of Quantum Cascade Lasers</title><link href="http://notinkansasnow.com/publication/2009/05/voltage-tunability-of-quantum-cascade-lasers/" rel="alternate"></link><updated>2009-05-19T00:00:00-07:00</updated><author><name>Kale J. Franz, PhD</name></author><id>tag:notinkansasnow.com,2009-05-19:publication/2009/05/voltage-tunability-of-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;The voltage tunability of three types of quantum cascade laser designs is
+imaging applications in the long-wave infrared.&lt;/p&gt;</summary><category term="metamaterials"></category><category term="semiconductors"></category></entry><entry><title>New Quantum Cascade Laser Architectures</title><link href="http://notinkansasnow.com/publication/2009/06/new-quantum-cascade-laser-architectures/" rel="alternate"></link><updated>2009-06-01T00:00:00-07:00</updated><author><name>Kale J. Franz, PhD</name></author><id>tag:notinkansasnow.com,2009-06-01:publication/2009/06/new-quantum-cascade-laser-architectures/</id><summary type="html">&lt;p&gt;Quantum cascade (QC) lasers are today’s most capable mid-infrared light sources.
+With up to watt-level room temperature emission over a broad swath of
+mid-infrared wavelengths, these tiny semiconductor devices enable a variety of
+applications and technologies such as ultra-sensitive systems for detecting
+trace molecules in the vapor phase. The foundation of a QC structure lies in
+alternating hundreds of wide- and narrow-bandgap semiconductor layers to form a
+coupled quantum well system. In this way, the laws of quantum mechanics are used
+to precisely engineer electron transport and create artificial optical
+transitions. The result is a material with capabilities not found in nature,
+a truly "designer" material.&lt;/p&gt;
+&lt;p&gt;As a central theme in this thesis, we stress the remarkable flexibility of the
+quantum cascade—the ability to highly tailor device structure for creative
+design concepts. The QC idea, in fact, relies on no particular material system
+for its implementation. While all QC lasers to date have been fabricated from
+III–V materials such as InGaAs/AlInAs, I detail our preliminary work on
+ZnCdSe/ZnCdMgSe—a II–VI materials system—where we have demonstrated
+electroluminescence.&lt;/p&gt;
+&lt;p&gt;We then further discuss how the inherent QC flexibility can be exploited for
+new devices that extend QC performance and capabilities. In this regard, we
+offer the examples of excited state transitions and short injectors. Excited
+state transitions are an avenue to enhancing optical gain, which is especially
+needed for longer-wavelength devices where optical losses hinder performance.
+Likewise, shortening the QC injector length over a conventional QC structure has
+powerful implications for threshold current, output power, and wall-plug
+efficiency. In both cases, novel physical effects are discovered. Pumping
+electrons into highly excited states led to the discovery of high k- space
+lasing from highly non-equilibrium electron distributions. Shortening QC
+injector regions allowed us to observe “classical” superlattice effects such as
+negative differential resistance and pulse instabilities. While interesting from
+a scientific perspective, these unique phenomena shed new insight on internal
+QC laser processes and may them- selves lead to further improvements in device
+performance.&lt;/p&gt;</summary><category term="lasers"></category><category term="QCLs"></category><category term="thesis"></category></entry><entry><title>Voltage Tunability of Quantum Cascade Lasers</title><link href="http://notinkansasnow.com/publication/2009/05/voltage-tunability-of-quantum-cascade-lasers/" rel="alternate"></link><updated>2009-05-19T00:00:00-07:00</updated><author><name>Kale J. Franz, PhD</name></author><id>tag:notinkansasnow.com,2009-05-19:publication/2009/05/voltage-tunability-of-quantum-cascade-lasers/</id><summary type="html">&lt;p&gt;The voltage tunability of three types of quantum cascade laser designs is
 investigated. The tuning coefficients and tuning ranges of electroluminescence
 and laser emission from all designs are measured and compared with the
 calculated results. A reduced tunability was observed in all lasers above

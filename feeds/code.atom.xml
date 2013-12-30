@@ -11,7 +11,9 @@ just doesn't compete (or have the color name feature). &lt;strong&gt;tl;dr&lt;/s
 own; it's called &lt;em&gt;uncolorblind&lt;/em&gt;, and it's all on
 &lt;a href="https://github.com/kalefranz/uncolorblind"&gt;github&lt;/a&gt;. I'll also package up
 distributable binaries at some point too.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="color plate" src="/static/image/color_plate.jpg" /&gt;&lt;/p&gt;</summary><category term="code"></category><category term="color blind"></category><category term="python"></category><category term="qt"></category></entry><entry><title>On Contracting Software Development</title><link href="http://notinkansasnow.com/code/2013/05/on-contracting-software-development/" rel="alternate"></link><updated>2013-05-13T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2013-05-13:code/2013/05/on-contracting-software-development/</id><summary type="html">&lt;p&gt;&lt;strong&gt;Core Assertion:&lt;/strong&gt; The company owns the code, not the contractor.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="color plate" src="/static/image/color_plate.jpg" /&gt;&lt;/p&gt;</summary><category term="code"></category><category term="color blind"></category><category term="python"></category><category term="qt"></category></entry><entry><title>On Contracting Software Development</title><link href="http://notinkansasnow.com/code/2013/05/on-contracting-software-development/" rel="alternate"></link><updated>2013-05-13T00:00:00-07:00</updated><author><name>Kale Franz</name></author><id>tag:notinkansasnow.com,2013-05-13:code/2013/05/on-contracting-software-development/</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Core Assertion:&lt;/strong&gt; The company owns the code, not the contractor.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;If you're a contractor, why wouldn't you want to keep the actual source to
 yourself?  You lock the company your contacting for into using your services in
 perpetuity.  Good for the contractor; &lt;em&gt;very&lt;/em&gt; bad for the procuring company.  My

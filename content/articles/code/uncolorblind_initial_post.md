@@ -3,6 +3,7 @@ category: code
 tags: code, color blind, python, qt
 title: Introducing <em>uncolorblind</em>
 local_id:
+github_repo: uncolorblind
 
 I'm color blind. Or technically "color deficient." For example, most people can
 see the **2** in the color plate. I can't. (Yet I can study it

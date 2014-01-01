@@ -240,15 +240,16 @@ article header.main_article {
 .wpsocialite.large .twitter-follow.socialite-loaded{ width:100%; }
 .wpsocialite.small { display: table; width: 100%; list-style: none; overflow: visible; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
 .wpsocialite.small > li {display: table-cell;}
-.wpsocialite.small .socialite { display: block; position: relative; width: 85px; height: 23px;}
+.wpsocialite.small .socialite { display: block; position: relative; width: 90px; height: 23px;}
 .wpsocialite.small .socialite-loaded { background: none; }
 .wpsocialite.small .twitter-share { background-position: 0 0; }
-.wpsocialite.small .googleplus-one { background-position: 0 -45px; }
+.wpsocialite.small .googleplus-one { width: 73px; background-position: 0 -45px; }
 .wpsocialite.small .facebook-like { background-position: 0 -90px; }
 .wpsocialite.small .linkedin-share { background-position: 0 -137px; }
 .wpsocialite.small .pinterest-pinit { background-position: 0 -175px; }
 .wpsocialite.small .stumbleupon-share { background-position: 0 -225px; }
 .wpsocialite.small .twitter-follow.socialite-loaded{ width:200px; }
+.wpsocialite.small .github { background-position: 0 0; }
 
 .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
     width: 100% !important;

@@ -36,7 +36,7 @@ help:
 	@echo 'Set the DEBUG variable to 1 to enable debugging, e.g. make DEBUG=1 html'
 	@echo '                                                                       '
 
-html:
+html: clean css js
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
 clean: clean_css clean_publish
@@ -74,7 +74,7 @@ stopserver:
 publish: clean css js
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	cp -r output/* $(PUBLISHDIR)
-	./hashstatic $(PUBLISHDIR)
+	#./hashstatic $(PUBLISHDIR)
 
 github: publish
 	cd $(PUBLISHDIR); git add -A; git commit -m "site update"; git push origin gh-pages
@@ -93,13 +93,11 @@ css: bootstrap
 	cd src/scss; sass nikn.scss nikn.css
 	java -jar yuicompressor-2.4.8.jar ./src/scss/nikn.css > ./theme/static/css/nikn.min.css
 
-./theme/static/js/packed.js: ./src/js/*.js
+js: clean_js
 	rm -rf src/js/*.min* src/js/packed*
 	#cd src/js && rm -rf packed.js && cat *.js > packed.js
 	java -jar yuicompressor-2.4.8.jar -o '.js$:.min.js' src/js/*.js
 	cp ./src/js/*.js ./theme/static/js/
-
-js: ./theme/static/js/packed.js
 
 
 clean_js:

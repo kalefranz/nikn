@@ -1,10 +1,16 @@
 {% import 'macros.j2' as macros with context %}
-<div style="display: inline-block;">
-  <ul class="wpsocialite small">
+<div class="socialite-small">
+  <ul>
     {% if article and article.github_repo -%}
       <li><iframe src="http://ghbtns.com/github-btn.html?user=kalefranz&repo={{ article.github_repo }}&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe></li>
     {%- endif %}
-    <li><a href="http://www.facebook.com/sharer.php?u={{ macros.url() }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" data-href="{{ macros.url() }}" data-send="false" data-layout="button_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
+    <li>
+      <a href="http://www.facebook.com/sharer.php?u={{ macros.url() }}&amp;t={{ macros.make_title()|urlencode }}"
+         class="socialite facebook-like" data-href="{{ macros.url() }}" data-send="false" data-layout="button_count"
+         data-width="60" data-show-faces="false" rel="nofollow" target="_blank">
+         <span class="vhidden">Share on Facebook</span>
+       </a>
+    </li>
     <li><a href="http://twitter.com/share" class="socialite twitter-share" {# data-text="tweet text" #}data-url="{{ macros.url() }}" data-counturl="{{ macros.url() }}" data-via="kalefranz" data-hashtags="{{ macros.hashtags() }}" data-count="horizontal" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
     <li><a href="https://plus.google.com/share?url={{ macros.url() }}" class="socialite googleplus-one" data-size="medium" data-href="{{ macros.url() }}" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>
 {# <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ macros.url() }}&amp;title={{ macros.make_title()|urlencode }}" class="socialite linkedin-share" data-url="{{ macros.url() }}" data-counter="right" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a></li> #}

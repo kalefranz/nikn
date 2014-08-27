@@ -16,11 +16,13 @@
 </script>
 {% endif %}
 
+
 <script type="text/javascript">
   $(window).bind("load", function() {
     $.getScript('{{ SITEURL }}/static/js/social.min.js', function() {});
   });
 </script>
+
 
 {#
 <!-- in-line all svg asset -->
@@ -55,7 +57,7 @@
 </script>
 #}
 
-
+{#
 <!--socialite-->
 <script type="text/javascript" src="{{ SITEURL }}/static/js/socialite.min.js"></script>
 <script type="text/javascript">
@@ -65,3 +67,4 @@ $(document).ready(function()
   }
 );
 </script>
+#}

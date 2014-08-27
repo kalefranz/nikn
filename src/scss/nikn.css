@@ -289,7 +289,7 @@ img {
 .img-rounded {
   border-radius: 6px; }
 
-.img-thumbnail {
+.img-thumbnail, .thumbnail {
   padding: 4px;
   line-height: 1.42857;
   background-color: white;
@@ -2799,6 +2799,25 @@ a.list-group-item.active > .badge,
       .jumbotron h1 {
         font-size: 67.5px; } }
 
+.thumbnail {
+  display: block; }
+  .thumbnail > img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: #18bc9c; }
+
+.thumbnail > img {
+  margin-left: auto;
+  margin-right: auto; }
+
+.thumbnail .caption {
+  padding: 9px;
+  color: #2c3e50; }
+
 .media,
 .media-body {
   overflow: hidden;
@@ -3987,11 +4006,18 @@ nav {
 .jumbotron {
   padding: 36px 60px;
   line-height: 160%;
-  background-color: #1dd2af; }
+  background-color: #1dd2af;
+  font-family: 'Crimson Text', serif; }
 
 .jumbotron img {
   margin: 0 0 10px 15px;
   float: right; }
+
+.jumbotron h1 {
+  font-family: Sansation, sans-serif;
+  font-weight: normal;
+  font-size: 57.5px;
+  padding-bottom: 0.1em; }
 
 .aside {
   background-color: #1abc9c; }
@@ -4005,8 +4031,11 @@ h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  font-family: 'Josefin Slab', serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 700; }
+
+h2 {
+  font-weight: 500; }
 
 hr {
   display: block;
@@ -4157,7 +4186,9 @@ blockquote {
 
 .main_paginator {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  font-face: Ubuntu, sans-serif;
+  font-weight: 700; }
 
 header.preview {
   margin-bottom: 12px; }
@@ -4170,6 +4201,9 @@ article h2 {
 
 article header.main_article {
   margin-bottom: 12px; }
+
+span.nowrap {
+  display: inline-block; }
 
 .vhidden {
   border: 0;
@@ -4222,7 +4256,7 @@ article header.main_article {
 .wpsocialite.large .facebook-like {
   width: 50px;
   height: 65px;
-  background-position: -145px 0; }
+  background-position: -100px 0; }
 
 .wpsocialite.large .linkedin-share {
   width: 60px;
@@ -4247,53 +4281,44 @@ article header.main_article {
 .wpsocialite.large .twitter-follow.socialite-loaded {
   width: 100%; }
 
-.wpsocialite.small {
-  display: table;
-  width: 100%;
-  list-style: none;
-  overflow: visible;
+.socialite-small {
+  position: relative; }
+
+.socialite-small > ul {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  list-style-type: none;
+  line-height: 12px;
+  position: absolute; }
 
-.wpsocialite.small > li {
-  display: table-cell; }
-
-.wpsocialite.small .socialite {
-  display: block;
-  position: relative;
+.socialite-small > ul > li {
+  display: inline;
+  padding-right: 20px;
   width: 90px;
   height: 23px; }
 
-.wpsocialite.small .socialite-loaded {
+.socialite-small .socialite {
+  display: inline;
+  width: 90px;
+  height: 23px; }
+
+.socialite-small .socialite-loaded {
+  display: inline;
+  width: 90px;
+  height: 23px;
   background: none; }
 
-.wpsocialite.small .twitter-share {
-  background-position: 0 0; }
-
-.wpsocialite.small .googleplus-one {
-  width: 73px;
-  background-position: 0 -45px; }
-
-.wpsocialite.small .facebook-like {
+.socialite-small .facebook-like {
   background-position: 0 -90px; }
 
-.wpsocialite.small .linkedin-share {
+.socialite-small .linkedin-share {
   background-position: 0 -137px; }
 
-.wpsocialite.small .pinterest-pinit {
+.socialite-small .pinterest-pinit {
   background-position: 0 -175px; }
 
-.wpsocialite.small .stumbleupon-share {
-  background-position: 0 -225px; }
-
-.wpsocialite.small .twitter-follow.socialite-loaded {
+.socialite-small .twitter-follow.socialite-loaded {
   width: 200px; }
-
-.wpsocialite.small .github {
-  background-position: 0 0; }
-
-.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
-  width: 100% !important; }
 
 @media screen and (max-width: 480px) {
   .navbar-brand {
@@ -4307,7 +4332,6 @@ article header.main_article {
   .jumbotron {
     padding: 18px 20px;
     font-size: 14px;
-    font-family: 'Ubuntu', sans-serif;
     line-height: 21px; }
 
   .jumbotron h1 {

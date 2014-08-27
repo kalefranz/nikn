@@ -1,7 +1,7 @@
 date: 2010-03-23
 category: publication
 tags: II-VI semiconductors, molecular beam epitaxy, QCLs
-title: Growth of Zn<sub>x'</sub>Cd<sub>1−x′</sub>Se/Zn<sub>x</sub>Cd<sub>y</sub>Mg<sub>1−x−y</sub>Se–InP quantum cascade structures for emission in the 3–5 μm range
+title: Growth of Zn<sub>x'</sub>Cd<sub>1−x′</sub>Se/<span class="nowrap">Zn<sub>x</sub>Cd<sub>y</sub>Mg<sub>1−x−y</sub>Se–InP</span> quantum cascade structures for emission in the <span class="nowrap">3–5 &#956;m</span> range
 authors: W. O. Charles, Y. Yao, K. J. Franz, Q. Zhang, A. Shen, C. Gmachl, and M. C. Tamargo
 author: Kale J. Franz, PhD
 journal: Journal of Vacuum Science and Technology B

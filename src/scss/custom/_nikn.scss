@@ -41,10 +41,17 @@ nav {
     padding: 36px 60px;
     line-height: 160%;
     background-color: #1dd2af;
+    font-family: 'Crimson Text', serif;
 }
 .jumbotron img {
   margin: 0 0 10px 15px;
   float: right;
+}
+.jumbotron h1 {
+  font-family: Sansation, sans-serif;
+  font-weight: normal;
+  font-size: 57.5px;
+  padding-bottom: 0.1em;
 }
 .aside {
     background-color: #1abc9c;
@@ -58,8 +65,11 @@ h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 0;
-    font-family: 'Josefin Slab', serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 700;
+}
+h2 {
+  font-weight: 500;
 }
 hr {
     display: block;
@@ -211,6 +221,8 @@ blockquote {
 .main_paginator {
     margin:0 auto;
     text-align:center;
+    font-face: Ubuntu, sans-serif;
+    font-weight: 700;
 }
 header.preview {
     margin-bottom: 12px;
@@ -224,6 +236,10 @@ article h2 {
 article header.main_article {
     margin-bottom: 12px;
 }
+span.nowrap {
+//  white-space: nowrap;
+  display: inline-block;
+}
 
 .vhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
 .wpsocialite.large { display: table; table-layout: fixed; width: 100%; list-style: none; padding: 0; margin: 0; overflow: visible;}
@@ -232,28 +248,72 @@ article header.main_article {
 .wpsocialite.large .socialite-loaded { background: none !important; }
 .wpsocialite.large .twitter-share { width: 55px; height: 65px; background-position: 0 0; }
 .wpsocialite.large .googleplus-one { width: 50px; height: 65px; background-position: -82px 0; }
-.wpsocialite.large .facebook-like { width: 50px; height: 65px; background-position: -145px 0; }
+.wpsocialite.large .facebook-like { width: 50px; height: 65px; background-position: -100px 0; }
 .wpsocialite.large .linkedin-share { width: 60px; height: 65px; background-position: -215px 0; }
 .wpsocialite.large .pinterest-pinit { width: 50px; height: 65px; background-position: -367px 0; }
 .wpsocialite.large .stumbleupon-share { width: 50px; height: 65px; background-position: -439px 0; }
 .wpsocialite.large .twitter-follow { width: 56px; height: 65px; background-position: -509px 0; }
 .wpsocialite.large .twitter-follow.socialite-loaded{ width:100%; }
-.wpsocialite.small { display: table; width: 100%; list-style: none; overflow: visible; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
-.wpsocialite.small > li {display: table-cell;}
-.wpsocialite.small .socialite { display: block; position: relative; width: 90px; height: 23px;}
-.wpsocialite.small .socialite-loaded { background: none; }
-.wpsocialite.small .twitter-share { background-position: 0 0; }
-.wpsocialite.small .googleplus-one { width: 73px; background-position: 0 -45px; }
-.wpsocialite.small .facebook-like { background-position: 0 -90px; }
-.wpsocialite.small .linkedin-share { background-position: 0 -137px; }
-.wpsocialite.small .pinterest-pinit { background-position: 0 -175px; }
-.wpsocialite.small .stumbleupon-share { background-position: 0 -225px; }
-.wpsocialite.small .twitter-follow.socialite-loaded{ width:200px; }
-.wpsocialite.small .github { background-position: 0 0; }
+//.wpsocialite.small { display: table; width: 100%; list-style: none; overflow: visible; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
+//.wpsocialite.small > li {display: table-cell;}
+//.wpsocialite.small .socialite { display: block; position: relative; width: 90px; height: 23px;}
+//.wpsocialite.small .socialite-loaded { background: none; }
+//.wpsocialite.small .twitter-share { background-position: 0 0; }
+//.wpsocialite.small .googleplus-one { width: 73px; background-position: 0 -45px; }
+//.wpsocialite.small .facebook-like { background-position: 0 -10px; }
+//.wpsocialite.small .linkedin-share { background-position: 0 -137px; }
+//.wpsocialite.small .pinterest-pinit { background-position: 0 -175px; }
+//.wpsocialite.small .stumbleupon-share { background-position: 0 -225px; }
+//.wpsocialite.small .twitter-follow.socialite-loaded{ width:200px; }
+//.wpsocialite.small .github { background-position: 0 0; }
 
-.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
-    width: 100% !important;
+.socialite-small {
+  position: relative;
 }
+
+.socialite-small > ul {
+//  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  line-height: 12px;
+  position: absolute;
+}
+.socialite-small > ul > li {
+  display: inline;
+  padding-right: 20px;
+  width: 90px;
+  height: 23px;
+}
+
+//.wpsocialite.small { display: table; width: 100%; list-style: none; overflow: visible; padding: 0; margin: 0;} // padding: 10px; margin: 10px;
+//.wpsocialite.small > li {display: table-cell;}
+
+//.socialite-small .socialite { display: block; position: relative; width: 90px; height: 23px;}
+.socialite-small .socialite {
+  display: inline;
+  width: 90px;
+  height: 23px;
+}
+.socialite-small .socialite-loaded {
+  display: inline;
+  width: 90px;
+  height: 23px;
+  background: none;
+}
+
+//.socialite-small .twitter-share { background-position: 0 0; }
+//.socialite-small .googleplus-one { width: 73px; background-position: 0 -45px; }
+.socialite-small .facebook-like { background-position: 0 -90px; }
+.socialite-small .linkedin-share { background-position: 0 -137px; }
+.socialite-small .pinterest-pinit { background-position: 0 -175px; }
+//.socialite-small .stumbleupon-share { background-position: 0 -225px; }
+.socialite-small .twitter-follow.socialite-loaded{ width:200px; }
+//.socialite-small .github { background-position: 0 0; }
+
+//.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
+//    width: 100% !important;
+//}
 
 @media screen and (max-width: $screen-phone) { // < 480px
     .navbar-brand {
@@ -267,7 +327,6 @@ article header.main_article {
     .jumbotron {
         padding: 18px 20px;
         font-size: 14px;
-        font-family: 'Ubuntu', sans-serif;
         line-height: 21px;
     }
     .jumbotron h1 {

@@ -8,6 +8,9 @@ def convert_less_to_scss(data_str):
     """Resources:
         http://stackoverflow.com/questions/14970224/anyone-know-of-a-good-way-to-convert-from-less-to-sass
         http://wildlyinaccurate.com/converting-bootswatch-themes-to-sass
+        
+    Additional resource to consider:
+        https://github.com/iki/bootstrap-switch-sass/blob/master/scripts/less2scss
     """
     #1. replace @ with $
     data_str = re.sub(r'@([a-zA-Z0-9_-]+)', r'$\1', data_str)

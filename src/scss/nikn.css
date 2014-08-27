@@ -4015,9 +4015,9 @@ nav {
 
 .jumbotron h1 {
   font-family: Sansation, sans-serif;
-  font-weight: normal;
-  font-size: 57.5px;
-  padding-bottom: 0.1em; }
+  font-weight: bold;
+  font-size: 54px;
+  padding-bottom: 0.2em; }
 
 .aside {
   background-color: #1abc9c; }

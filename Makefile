@@ -74,7 +74,7 @@ stopserver:
 publish: clean css js
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 	cp -r output/* $(PUBLISHDIR)
-	#./hashstatic $(PUBLISHDIR)
+	./hashstatic $(PUBLISHDIR)
 
 github: publish
 	cd $(PUBLISHDIR); git add -A; git commit -m "site update"; git push origin gh-pages

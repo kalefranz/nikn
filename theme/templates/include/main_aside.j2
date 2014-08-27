@@ -1,5 +1,5 @@
 {% import 'macros.j2' as macros with context %}
-<div class="well aside">
+<div class="well aside clearfix">
 
   <div class="btn-group btn-group-justified social_button_group">
     <a href="https://github.com/kalefranz" target="_blank" class="btn btn-info social_button_item" data-icon="m"></a>
@@ -12,11 +12,11 @@
     <a href="#" class="btn btn-info social_button_item" data-icon="K"></a>
   </div>
 
-<!--
+{#
   <div class="well well-sm clearfix" style="width:100%; background-color: #3ee5c3; padding-bottom: 5px; margin-bottom: 12px;">
     <ul class="wpsocialite large">
       <li><a href="http://www.facebook.com/sharer.php?u={{ SITEURL }}&amp;t={{ macros.make_title()|urlencode }}" class="socialite facebook-like" data-href="{{ SITEURL }}" data-send="false" data-layout="box_count" data-width="60" data-show-faces="false" rel="nofollow" target="_blank"><span class="vhidden">Share on Facebook</span></a></li>
-      <li><a href="http://twitter.com/share" class="socialite twitter-share" {# data-text="tweet text" #}data-url={{ SITEURL }}" data-counturl="{{ SITEURL }}" data-via="kalefranz" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
+      <li><a href="http://twitter.com/share" class="socialite twitter-share" data-url={{ SITEURL }}" data-counturl="{{ SITEURL }}" data-via="kalefranz" data-count="vertical" rel="nofollow" target="_blank"><span class="vhidden">Share on Twitter</span></a></li>
       <li><a href="https://plus.google.com/share?url={{ SITEURL }}" class="socialite googleplus-one" data-size="tall" data-href="{{ SITEURL }}" rel="nofollow" target="_blank"><span class="vhidden">Share on Google+</span></a></li>
       <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={{ SITEURL }}&amp;title={{ macros.make_title()|urlencode }}" class="socialite linkedin-share" data-url="{{ SITEURL }}" data-counter="top" rel="nofollow" target="_blank"><span class="vhidden">Share on LinkedIn</span></a></li>
     </ul>
@@ -24,12 +24,17 @@
       <span class="logo_not">Not</span><span class="logo_in">In</span><span class="logo_kansas">Kansas</span><span class="logo_now">now</span>
     </div>
   </div>
--->
-
-  <div class="twitter_frame">
-    <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480" data-show-replies="true">Tweets by @kalefranz</a>
+#}
+  <ul class="inline-list">
+  <li>
+  <div class="panel twitter_frame">
+  <div class="panel-body">
+    <a class="twitter-timeline" href="https://twitter.com/kalefranz" data-widget-id="413308757775380480" data-show-replies="true" height="320">Tweets by @kalefranz</a>
   </div>
-  <div class="panel panel-info">
+  </div>
+  </li>
+  <li>
+  <div class="panel panel-info tagcloud_frame">
     <div class="panel-heading">
       <h3 class="panel-title label_bold">TAGS &amp; TOPICS</h3>
     </div>
@@ -39,6 +44,8 @@
       {% endfor %}
     </div>
   </div>
+  </li>
+  </ul>
 
 </div>
 
